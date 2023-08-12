@@ -1,0 +1,5 @@
+export const background = '#0C134F'
+export const text = '#5C469C'
+export const secondary = '#D4ADFC'
+export const backgroundPrimary = '#1D267D'
+export const textLight = '#FFF0F5'
