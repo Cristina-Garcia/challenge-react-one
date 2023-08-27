@@ -1,0 +1,1 @@
+const [categorias, setCategorias] = useState([])

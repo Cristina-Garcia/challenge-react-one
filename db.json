@@ -1,0 +1,140 @@
+{
+  "animes": [
+    {
+      "id": "1",
+      "title": "D.Gray-man",
+      "videourl": "https://www.youtube.com/embed/GIOe6KZrHBA?si=M1_ybI-wHU8jwbyA",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/13/75194l.jpg",
+      "sinopsis": "Después de pasar tres años como discípulo del General Cross, Allen Walker es enviado a la Orden Negra, una organización compuesta por aquellos dispuestos a luchar contra los Akuma y el Conde del Milenio, para convertirse en un Exorcista oficial. Con un brazo como su Inocencia y un ojo maldito que puede ver las almas sufrientes dentro de un Akuma, depende de Allen y sus compañeros Exorcistas detener el último plan del Conde del Milenio: uno que puede llevar a la destrucción del mundo.[Escrito por Reescritura de MAL]",
+      "genre": "Shounen",
+      "code": "123"
+    },
+    {
+      "id": "2",
+      "title": "Golden Time",
+      "videourl": "https://www.youtube.com/watch?v=44njDYJ5OJA",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/12/52091l.jpg",
+      "sinopsis": "Debido a un trágico accidente, Banri Tada sufre de amnesia, lo que disuelve los recuerdos de su ciudad natal y su pasado. Sin embargo, después de hacerse amigo de Mitsuo Yanagisawa, decide seguir adelante y comenzar una nueva vida en la facultad de derecho en Tokio. Pero justo cuando está empezando a adaptarse a su vida universitaria, la hermosa Kouko Kaga irrumpe dramáticamente en la vida de Banri, y su encuentro fortuito marca el inicio de un año inolvidable. [Written by MAL Rewrite]",
+      "genre": "Drama",
+      "code": "123"
+    },
+    {
+      "id": "3",
+      "title": "Amor de gata",
+      "videourl": "https://www.youtube.com/embed/yuMTWa-7R-M?si=XzCYa4hZgf1NTa5I",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/1045/106389l.jpg",
+      "sinopsis": "Aunque Miyo no logra captar la atención de Kento siendo ella misma, consigue tener éxito interactuando con él en forma de un gato blanco, cariñosamente apodado 'Tarou' por Kento. Pero Miyo pronto se da cuenta de que no puede ayudar a Kento con los diversos problemas que escucha en su forma de gato y ahora se encuentra atrapada entre dos decisiones difíciles. ¿Continuará su relación con él como gato, o revelará su identidad y arriesgará lo que tienen para ayudarlo como su yo humano?. [Written by MAL Rewrite]",
+      "genre": "Romance",
+      "code": "123"
+    },
+    {
+      "id": "4",
+      "title": "Dororo",
+      "videourl": "https://www.youtube.com/embed/YgHPBwLu0BA?si=gu4COJQp76TO3uAx",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/1879/100467l.jpg",
+      "sinopsis": "Un niño no tiene extremidades, nariz, ojos, oídos ni siquiera piel, pero aún así, vive.Este niño es arrojado a un río y olvidado. Pero, por suerte, es rescatado por un hombre médico que le proporciona prótesis y armas, lo que le permite sobrevivir y valerse por sí mismo. El niño vive y crece, y aunque no puede ver, oír ni sentir nada, debe derrotar a los demonios que lo tomaron como sacrificio. Con la muerte de cada uno, recupera una parte de sí mismo que legítimamente le pertenece. Durante muchos años, vaga solo, hasta que un día un niño huérfano, Dororo, se hace amigo suyo. La improbable pareja de desterrados lucha ahora por su supervivencia y humanidad en un mundo despiadado infestado de demonios..\n\n[Written by MAL Rewrite]",
+      "genre": "Action",
+      "code": "123"
+    },
+    {
+      "id": "5",
+      "title": "One piece",
+      "videourl": "https://www.youtube.com/embed/MCb13lbVGE0?si=afWOblbaRgchVnjo",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/1100/116767.jpg",
+      "sinopsis": "One Piece narra la historia de un joven llamado Monkey D. Luffy, que inspirado por su amigo pirata Shanks, comienza un viaje para alcanzar su sueño, ser el Rey de los piratas, para lo cual deberá encontrar el tesoro One Piece dejado por el anterior rey de los piratas Gol D. Roger.",
+      "genre": "Adventure",
+      "code": "123"
+    },
+    {
+      "id": "6",
+      "title": "Death Note",
+      "videourl": "https://www.youtube.com/embed/UiJ0aSqEX7I?si=Ys4MNVIzS5o1I0i0",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/9/9453.jpg",
+      "sinopsis": "Light Yagami es un joven estudiante que un día encuentra un cuaderno llamado Death Note que tiene una macabra propiedad: si el nombre de una persona aparece escrito en él, morirá. Light decide, entonces, embarcarse en una misión para librar al mundo de todos los criminales. Sin embargo, su plan empieza a torcerse cuando L, un brillante detective, intenta descifrar el misterio que rodea a todas estas muertes.",
+      "genre": "Gore",
+      "code": "123"
+    },
+    {
+      "id": "7",
+      "title": "Blood C",
+      "videourl": "https://www.youtube.com/embed/UqpRUvLoUuM?si=GFl-Jnk9i8WYclbb",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/2/31649l.jpg",
+      "sinopsis": "Saya Kisaragi lleva una vida normal en el instituto y disfruta de su día a día. Sin embargo, una noche su padre le encomienda una misión como heredera del Templo Ukishima. Los llamados 'Ancianos'('Furukimono') cazan y devoran humanos. Sólo Saya será capaz de acabar con estos seres y poder así proteger la ciudad y su querido instituto. Poco a poco, Saya irá desvelando más sobre los enigmáticos Ancianos hasta encontrar la verdad, pero... ¡¿qué sorpresas le aguarda el destino a Saya?!.",
+      "genre": "Gore",
+      "code": "123"
+    },
+    {
+      "id": "8",
+      "title": "Deadman Wonderland",
+      "videourl": "https://www.youtube.com/embed/d6ye7BSkxuk?si=CFbg0Mttae2BY5Il",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/9/75299.jpg",
+      "sinopsis": "Ganta Igarashi mientras está en clase ve, por la ventana, a un hombre cubierto de sangre. Segundos después el hombre mata a todos sus compañeros, y cuando cree ser el siguiente, el asesino le incrusta un cristal carmesí en el pecho. Ganta es acusado por los asesinatos y condenado a cadena perpetua en Deadman Wonderland.Para poder sobrevivir, Ganta deberá participar en los mortales juegos de Deadman Wonderland.",
+      "genre": "Gore",
+      "code": "123"
+    },
+    {
+      "id": "9",
+      "title": "Dragon ball",
+      "videourl": "https://www.youtube.com/embed/LkZhdtb2nyk?si=8WB8K1c_QP5iABuk",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/1887/92364.jpg",
+      "sinopsis": "'Dragon Ball' se centra en Son Goku, que después de la muerte de su abuelo, conoce a Bulma, la hija de uno de los científicos más brillantes del mundo. Ella le invita a hacer una gran búsqueda de siete esferas de las legendarias Dragon Balls, que al ser reunidas dan lugar a la aparición del dragón sagrado que puede conceder cualquier deseo, pero solo uno.",
+      "genre": "Adventure",
+      "code": "123"
+    },
+    {
+      "id": "10",
+      "title": "Psycho pass",
+      "videourl": "https://www.youtube.com/embed/fP0jIp-9xco?si=sCI8HqgPFGVh5HbN",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/5/43399.jpg",
+      "sinopsis": "En un futuro cercano en el cual la sociedad japonesa está regida por un sistema denominado Sybil, es posible medir el estado mental de las personas así como su propensidad a volverse criminales, esto mediante un escáner que determina el Psycho-Pass: un valor numérico, el coeficiente de criminalidad, que sube o baja dependiendo de la situación del individuo; y un color, que al ser claro o oscuro, determina la estabilidad mental de la persona.",
+      "genre": "Action",
+      "code": "123"
+    },
+    {
+      "title": "After the rain",
+      "videourl": "https://www.youtube.com/embed/bHULBRnBenQ?si=8dhaYl2sbUWPScgF",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/1271/90136.jpg",
+      "sinopsis": "Akira Tachibana (Nana Komatsu) es una estudiante de secundaria de 17 años. Una vez fue una atleta prometedora, pero una lesión le ha impedido participar en atletismo. Un día, Akira Tachibana va a un restaurante familiar y el gerente le habla con voz tierna.",
+      "genre": "",
+      "code": "dia",
+      "id": "e9adb3f6-1801-4c2e-83fa-cbfc8c71d389"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "nombre": "Shounen",
+      "color": "#dc5c05",
+      "description": "Series con grandes dosis de acción, en las que a menudo se dan situaciones humorísticas. Destaca el compañerismo entre miembros de un colectivo o de un equipo de combate.",
+      "code": "123"
+    },
+    {
+      "id": "2",
+      "nombre": "Romance",
+      "color": "#ff8697",
+      "description": "Relatan una historia de amor. Normalmente los protagonistas son una pareja y su relación el centro del argumento.",
+      "code": "123"
+    },
+    {
+      "id": "3",
+      "nombre": "Action",
+      "color": "#4c1c24",
+      "description": "Series intensas y con emocionante narrativa, donde las peleas, batallas y confrontaciones desempeñan un papel central.",
+      "code": "123"
+    },
+    {
+      "id": "4",
+      "nombre": "Adventure",
+      "color": "#0c5c07",
+      "description": "Historias llenas de emoción y descubrimiento, donde los protagonistas se embarcan en viajes épicos y desafiantes.",
+      "code": "123"
+    },
+    {
+      "id": "5",
+      "nombre": "Gore",
+      "color": "#ff0100",
+      "description": "En este género abunda la sangre y la violencia. Usualmente, los temas son de intriga, oscuros y sobrenaturales.",
+      "code": "123"
+    }
+  ]
+}

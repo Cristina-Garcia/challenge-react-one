@@ -1,0 +1,9 @@
+form input:focus + label span,
+form input:valid + label span {
+  transform: translateY(-150%);
+  font-size: 12px;
+}
+
+form input:focus + label:after {
+  transform: translateX(0%);
+}
