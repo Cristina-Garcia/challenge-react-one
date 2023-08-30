@@ -7,25 +7,33 @@ const InfoCategory = styled.ul`
   grid-template-columns: 20% 45% repeat(2, 16%);
   gap: 0.5rem;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 `
 const Info = styled.li`
   color: #fff;
   list-style: none;
   padding-left: 0.5rem;
-  /* background: '#1D267D'; */
 `
-function Category({ data }) {
-  const { nombre, description } = data
+const Icon = styled.button`
+  color: #fff;
+  border: none;
+  background: transparent;
+  width: 20px;
+
+  cursor: pointer;
+`
+function Category({ category, handleDelete }) {
   return (
     <InfoCategory>
-      <Info>{nombre}</Info>
-      <Info>{description}</Info>
-      <Info>
+      <Info>{category.nombre}</Info>
+      <Info>{category.description}</Info>
+      <Icon>
         <i className="fa-solid fa-pen-to-square"></i>
-      </Info>
-      <Info>
+      </Icon>
+      <Icon onClick={() => handleDelete(category.id)}>
         <i className="fa-solid fa-trash"></i>
-      </Info>
+      </Icon>
     </InfoCategory>
   )
 }

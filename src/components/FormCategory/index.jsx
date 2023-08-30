@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Form } from '../../assets/StyledFormGroup'
 import { Title } from '../FormVideo'
 import InputText from '../InputText'
@@ -10,29 +10,18 @@ import TextArea from '../TextArea'
 import { clientService } from '../../Controllers/service'
 
 function FormCategory() {
+  const [categoriesList, setCategoriesList] = useState([])
+  useEffect(() => {
+    clientService.listCategories().then((datos) => {
+      setCategoriesList(datos)
+    })
+  }, [])
   const [categoryData, setCategoryData] = useState({
     nombre: '',
     color: '',
     description: '',
     code: '',
   })
-
-  // const [categorias, setCategorias] = useState([
-  //   {
-  //     id: uuid4(),
-  //     nombre: 'Espacio',
-  //     color: '#fff',
-  //     description: 'Todo sobre el espacio',
-  //     code: '123',
-  //   },
-  //   {
-  //     id: uuid4(),
-  //     nombre: 'Codigo',
-  //     color: '#842222',
-  //     description: 'Todo sobre el codigo',
-  //     code: '123',
-  //   },
-  // ])
 
   const handleChange = (e) => {
     setCategoryData({ ...categoryData, [e.target.name]: e.target.value })
@@ -42,13 +31,19 @@ function FormCategory() {
     e.preventDefault()
     clientService.createCategory(categoryData)
   }
+  const cleanForm = () => {
+    setCategoryData({
+      nombre: '',
+      color: '',
+      description: '',
+      code: '',
+    })
+  }
 
-  const listCategorias = clientService
-    .listCategories()
-    .then((categories) => categories)
-
-  console.log('datos', listCategorias)
-
+  const handleDelete = (id) => {
+    clientService.deleteCategory(id)
+    setCategoriesList(categoriesList.filter((category) => category.id !== id))
+  }
   return (
     <div>
       <Form onSubmit={handleSubmit}>
@@ -80,12 +75,12 @@ function FormCategory() {
             <ButtonForm $primary type="submit">
               Guardar
             </ButtonForm>
-            <ButtonForm>Limpiar</ButtonForm>
+            <ButtonForm onClick={cleanForm}>Limpiar</ButtonForm>
           </ButtonsActions>
         </ButtonContainer>
       </Form>
-      {listCategorias.length >= 0 && (
-        <InfoCategory categorias={listCategorias.categories} />
+      {categoriesList && (
+        <InfoCategory categorias={categoriesList} handleDelete={handleDelete} />
       )}
     </div>
   )

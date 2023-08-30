@@ -10,7 +10,8 @@ const StyledHeader = styled.header`
   align-items: center;
   border-bottom: 1px solid ${lineaColor};
   padding: 1rem;
-  background: ${background};
+  box-sizing: border-box;
+  /* background: ${background}; */
 `
 const Header = () => {
   return (

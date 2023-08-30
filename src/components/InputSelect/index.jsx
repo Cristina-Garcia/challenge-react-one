@@ -11,11 +11,11 @@ export const Select = styled.select`
   outline: 0px;
 `
 
-function InputSelect({ categories, value, updateValue }) {
+function InputSelect({ categories, name, value, updateValue }) {
   return (
-    <Select value={value} onChange={updateValue}>
-      <option value="" disabled selected>
-        Escoja un género
+    <Select name={name} value={value} onChange={updateValue}>
+      <option value="" disabled defaultValue="">
+        Escoja el género principal
       </option>
       {categories.map((categorie) => {
         return (

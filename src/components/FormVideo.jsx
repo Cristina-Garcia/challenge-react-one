@@ -28,13 +28,13 @@ export const ButtonForm = styled(StyledButton)`
 `
 
 function FormVideo() {
-  const [categoriesData, setCategoriesData] = useState([])
+  const [categoriesList, setCategoriesList] = useState([])
   useEffect(() => {
     clientService.listCategories().then((datos) => {
-      setCategoriesData(datos)
+      setCategoriesList(datos)
     })
   }, [])
-  const [videoData, setVideoData] = useState({
+  const [animeData, setAnimeData] = useState({
     title: '',
     videourl: '',
     imageurl: '',
@@ -45,53 +45,70 @@ function FormVideo() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    clientService.createVideo(videoData)
+    clientService.createVideo(animeData)
+    setAnimeData({
+      title: '',
+      videourl: '',
+      imageurl: '',
+      sinopsis: '',
+      genre: '',
+      code: '',
+    })
   }
 
   const handleChange = (e) => {
-    setVideoData({
-      ...videoData,
+    setAnimeData({
+      ...animeData,
       [e.target.name]: e.target.value,
     })
-    console.log(videoData)
   }
 
+  const cleanForm = () => {
+    setAnimeData({
+      title: '',
+      videourl: '',
+      imageurl: '',
+      sinopsis: '',
+      genre: '',
+      code: '',
+    })
+  }
   return (
     <Form onSubmit={handleSubmit}>
       <Title>Nuevo video</Title>
       <InputText
         text="Título"
         name="title"
-        value={videoData.title}
+        value={animeData.title}
         updateValue={handleChange}
       />
       <InputText
-        text="Link del video"
+        text="Link embed del video"
         name="videourl"
-        value={videoData.videourl}
+        value={animeData.videourl}
         updateValue={handleChange}
       />
       <InputText
         text="Link imagen del video"
         name="imageurl"
-        value={videoData.imageurl}
+        value={animeData.imageurl}
         updateValue={handleChange}
       />
       <InputSelect
         name="genre"
-        categories={categoriesData}
-        value={videoData.genre}
+        categories={categoriesList}
+        value={animeData.genre}
         updateValue={handleChange}
       />
       <TextArea
         name="sinopsis"
-        value={videoData.sinopsis}
+        value={animeData.sinopsis}
         updateValue={handleChange}
       />
       <InputText
         text="Código de seguridad"
         name="code"
-        value={videoData.code}
+        value={animeData.code}
         updateValue={handleChange}
       />
       <ButtonContainer>
@@ -99,7 +116,7 @@ function FormVideo() {
           <ButtonForm type="submit" $primary>
             Enviar
           </ButtonForm>
-          <ButtonForm>Limpiar</ButtonForm>
+          <ButtonForm onClick={cleanForm}>Limpiar</ButtonForm>
         </ButtonsActions>
         <StyledButton>
           <Link to="/new-category">Nueva Categoria</Link>

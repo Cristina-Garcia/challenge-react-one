@@ -3,12 +3,13 @@ import { background } from '../assets/UI/variables'
 
 export const Form = styled.form`
   width: 90vw;
+  height: calc(100% - 160px);
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* padding-inline: 40px; */
   padding-block: 40px;
-  background: ${background};
+  margin: 0 auto;
+  /* background: ${background}; */
 `
 
 export const FormGroup = styled.div`
@@ -26,7 +27,7 @@ export const InputFormFroup = styled.input`
   background: inherit;
   outline: 0px;
   caret-color: #fff;
-  color: '#fff';
+  color: white;
 `
 export const LabelFromGroup = styled.label`
   position: absolute;
@@ -45,7 +46,6 @@ export const LabelFromGroup = styled.label`
     bottom: -1px;
     width: 100%;
     height: 100%;
-
     transform: translateX(-100%);
     transition: all 0.3s ease;
   }

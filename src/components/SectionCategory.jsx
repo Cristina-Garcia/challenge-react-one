@@ -2,10 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import Imagen from './Imagen'
 import { ButtonMain } from '../assets/UI'
+import Slider from 'react-slick'
+
 const StyledSection = styled.section`
   width: 100%;
   padding-inline: 2rem;
   margin-block: 1rem;
+  box-sizing: border-box;
 `
 const SpanDescription = styled.span`
   font-size: 18px;
@@ -19,13 +22,36 @@ const CategoryHeader = styled.div`
   width: 100%;
   gap: 0.5rem;
   margin-block: 0.5rem;
+  @media (max-width: 480px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `
-const CategoryContainer = styled.div`
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-`
+
 function SectionCategory({ categorie, animes, getId }) {
+  var settings = {
+    dots: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  }
+
   return (
     <StyledSection>
       <CategoryHeader>
@@ -34,7 +60,7 @@ function SectionCategory({ categorie, animes, getId }) {
           Animes increíbles del género {categorie.nombre}
         </SpanDescription>
       </CategoryHeader>
-      <CategoryContainer>
+      <Slider {...settings}>
         {animes.map((anime) => {
           if (categorie.nombre === anime.genre) {
             return (
@@ -47,7 +73,7 @@ function SectionCategory({ categorie, animes, getId }) {
             )
           }
         })}
-      </CategoryContainer>
+      </Slider>
     </StyledSection>
   )
 }

@@ -11,6 +11,7 @@ const StyledTextArea = styled.textarea`
   outline: 0px;
   caret-color: #fff;
   resize: none;
+  color: white;
 `
 const Label = styled(LabelFromGroup)`
   margin-left: 10px;

@@ -6,13 +6,13 @@ import Footer from './Footer'
 import { background } from '../assets/UI/variables'
 
 const MainHome = styled.main`
-  background: ${background};
+  /* background: ${background}; */
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
   justify-content: center;
   align-items: center;
+  margin-block: 1rem;
 `
 
 export default function Home() {

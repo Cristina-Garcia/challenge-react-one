@@ -4,8 +4,8 @@ import SectionCategory from './SectionCategory'
 import { clientService } from '../Controllers/service'
 
 function Main() {
-  const [animeData, setAnimeData] = useState([])
-  const [categoriesData, setCategoriesData] = useState([])
+  const [animeList, setAnimeData] = useState([])
+  const [categoriesList, setCategoriesData] = useState([])
   const [animeId, setAnimeId] = useState()
 
   useEffect(() => {
@@ -27,20 +27,21 @@ function Main() {
   return (
     <>
       <SectionPrincipal
-        animes={animeData}
+        animes={animeList}
         animeId={animeId}
-        categories={categoriesData}
+        categories={categoriesList}
       />
-
-      {categoriesData.map((categorie, index) => {
-        return (
-          <SectionCategory
-            key={index}
-            categorie={categorie}
-            animes={animeData}
-            getId={getId}
-          />
-        )
+      {categoriesList.map((categorie, index) => {
+        if (animeList.find((anime) => anime.genre === categorie.nombre)) {
+          return (
+            <SectionCategory
+              key={index}
+              categorie={categorie}
+              animes={animeList}
+              getId={getId}
+            />
+          )
+        }
       })}
     </>
   )

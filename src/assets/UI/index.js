@@ -18,20 +18,34 @@ export const ButtonMain = styled(StyledButton)`
   background: ${(props) => props.background};
 `
 export const ImageContainer = styled.figure`
-  width: 400px;
+  width: 300px;
+  @media (max-width: 480px) {
+    display: none;
+  }
 `
 export const ImagenVideo = styled.img`
   width: inherit;
-  /* height: 200px; */
   border: 2px solid ${(props) => props.color};
 `
 export const TitleHero = styled.h3`
   font-size: 2.5rem;
   font-weight: 400;
   color: #fff;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `
 export const TextHero = styled.span`
   font-weight: 300;
   font-size: 18px;
   color: #fff;
+
+  /* From https://css.glass */
+  background: rgba(29, 38, 125, 0.35);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `

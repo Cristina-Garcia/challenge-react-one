@@ -8,21 +8,8 @@ import {
   TextHero,
 } from '../assets/UI'
 
-const video = 'https://www.youtube.com/embed/ip-zxgfW6Eo?si=oKSbKv-dN2GMOepB'
-// const SectionHero = styled.section`
-//   padding-block: 12.5rem;
-//   /* background-image: url(${banner}); */
-//   background-image: ${(props) =>
-//     props.backgroundImage ? `url(${props.backgroundImage})` : `url(${banner})`};
+const video = 'https://www.youtube.com/embed/7oJeOedoHCQ?si=-fOWnclwcu5LmajG'
 
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   /* height: 400px; */
-// `
 const SectionHero = styled.section`
   display: flex;
   justify-content: center;
@@ -39,17 +26,26 @@ const ContainerHero = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* margin-block: 3rem; */
   padding-inline: 2rem;
   color: white;
   z-index: 1;
+  @media (max-width: 768px) {
+    height: 450px;
+  }
 `
 const ContainerInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   width: 40%;
+  @media (max-width: 768px) {
+    height: 450px;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `
+
 const IframeVideo = styled.iframe`
   width: 100%;
   height: 600px;
@@ -60,7 +56,7 @@ function SectionPrincipal({ animes, animeId, categories }) {
   const selectAnime = animes.find((anime) => anime.id === animeId)
   const videoURL = selectAnime ? selectAnime.videourl : video
   const allow =
-    'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+    'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; '
   const categoriePrincipal = categories.find(
     (categorie) => categorie.nombre === selectAnime?.genre
   )
@@ -80,7 +76,7 @@ function SectionPrincipal({ animes, animeId, categories }) {
       {animes.map((anime) => {
         if (anime.id === animeId) {
           return (
-            <ContainerHero>
+            <ContainerHero key={anime.id}>
               <ContainerInfo>
                 <ButtonMain background={colorPrincipal}>
                   {anime.genre}
