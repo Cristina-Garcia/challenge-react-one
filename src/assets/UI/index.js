@@ -18,7 +18,7 @@ export const ButtonMain = styled(StyledButton)`
   background: ${(props) => props.background};
 `
 export const ImageContainer = styled.figure`
-  width: 300px;
+  width: 250px;
   @media (max-width: 480px) {
     display: none;
   }

@@ -403,6 +403,13 @@
       "description": "Se enfoca en adolescentes y presenta tramas más orientadas a la acción y aventura, el manga seinen aborda temas más profundos y complejos. Estos pueden incluir drama, romance, ciencia ficción, fantasía, historia, política, filosofía y exploración psicológica.",
       "code": "seinen",
       "id": "36fa6056-d5cb-4562-9786-9e5ce6ad8a24"
+    },
+    {
+      "nombre": "Mecha",
+      "color": "#706f6b",
+      "description": "Se caracteriza por la presencia de robots gigantes que son pilotados por humanos o que tienen inteligencia artificial, así también como por mundos llenos de tecnología avanzada.",
+      "code": "robots",
+      "id": "cf5d6f7c-49eb-4db1-906b-dc8dd4cc7e91"
     }
   ]
 }

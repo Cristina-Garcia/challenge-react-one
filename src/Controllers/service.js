@@ -31,11 +31,6 @@ const createVideo = async (videoData) => {
   })
 }
 
-const deleteCategory = async (categoryId) => {
-  return await fetch(`${categoriesURL}/${categoryId}`, {
-    method: 'DELETE',
-  })
-}
 const createCategory = async (categoryData) => {
   return await fetch(categoriesURL, {
     method: 'POST',
@@ -48,6 +43,21 @@ const createCategory = async (categoryData) => {
     }),
   })
 }
+const deleteCategory = async (categoryId) => {
+  return await fetch(`${categoriesURL}/${categoryId}`, {
+    method: 'DELETE',
+  })
+}
+
+const updateCategory = async (id, categoryData) => {
+  return await fetch(`${categoriesURL}/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(categoryData),
+  })
+}
 
 export const clientService = {
   listVideos,
@@ -55,4 +65,5 @@ export const clientService = {
   createVideo,
   createCategory,
   deleteCategory,
+  updateCategory,
 }

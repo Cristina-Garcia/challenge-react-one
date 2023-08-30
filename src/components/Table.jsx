@@ -29,7 +29,7 @@ const CategoriesContainer = styled.div`
   gap: 0.5rem;
 `
 
-function InfoCategory({ categorias, handleDelete }) {
+function Table({ categorias, handleDelete, handleUpdate }) {
   return (
     <Section>
       <SectionHeader>
@@ -46,6 +46,7 @@ function InfoCategory({ categorias, handleDelete }) {
                 key={category.id}
                 category={category}
                 handleDelete={handleDelete}
+                handleUpdate={handleUpdate}
               />
             )
           })}
@@ -55,4 +56,4 @@ function InfoCategory({ categorias, handleDelete }) {
   )
 }
 
-export default InfoCategory
+export default Table

@@ -23,12 +23,12 @@ const Icon = styled.button`
 
   cursor: pointer;
 `
-function Category({ category, handleDelete }) {
+function Category({ category, handleDelete, handleUpdate }) {
   return (
     <InfoCategory>
       <Info>{category.nombre}</Info>
       <Info>{category.description}</Info>
-      <Icon>
+      <Icon onClick={() => handleUpdate(category.id)}>
         <i className="fa-solid fa-pen-to-square"></i>
       </Icon>
       <Icon onClick={() => handleDelete(category.id)}>
