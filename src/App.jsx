@@ -4,11 +4,14 @@ import Home from './components/Home.jsx'
 import Main from './components/Main.jsx'
 import FormVideo from './components/FormVideo.jsx'
 import FormCategory from './components/FormCategory/index.jsx'
+import List from './components/List.jsx/index.jsx'
+import ErrorPage from './components/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
@@ -21,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: 'new-category',
         element: <FormCategory />,
+      },
+      {
+        path: 'animes/:categoria',
+        element: <List />,
       },
     ],
   },

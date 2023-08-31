@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Imagen from './Imagen'
 import { ButtonMain } from '../assets/UI'
@@ -55,7 +56,9 @@ function SectionCategory({ categorie, animes, getId }) {
   return (
     <StyledSection>
       <CategoryHeader>
-        <ButtonMain>{categorie.nombre}</ButtonMain>
+        <Link to={`/animes/${categorie.nombre}`}>
+          <ButtonMain>{categorie.nombre}</ButtonMain>
+        </Link>
         <SpanDescription>
           Animes increíbles del género {categorie.nombre}
         </SpanDescription>

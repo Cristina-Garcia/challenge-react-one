@@ -50,6 +50,7 @@ const IframeVideo = styled.iframe`
   width: 100%;
   height: 600px;
   src: ${(props) => (props.src ? `url(${props.src})` : `url(${video})`)};
+  border: none;
 `
 
 function SectionPrincipal({ animes, animeId, categories }) {

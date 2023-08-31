@@ -4,7 +4,7 @@
       "id": "1",
       "title": "D.Gray-man",
       "videourl": "https://www.youtube.com/embed/GIOe6KZrHBA?enablejsapi=1&wmode=opaque&autoplay=1",
-      "imageurl": "https://cdn.myanimelist.net/images/anime/13/75194l.jpg",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/13/75194.jpg",
       "sinopsis": "Después de pasar tres años como discípulo del General Cross, Allen Walker es enviado a la Orden Negra, una organización compuesta por aquellos dispuestos a luchar contra los Akuma y el Conde del Milenio, para convertirse en un Exorcista oficial. Con un brazo como su Inocencia y un ojo maldito que puede ver las almas sufrientes dentro de un Akuma, depende de Allen y sus compañeros Exorcistas detener el último plan del Conde del Milenio: uno que puede llevar a la destrucción del mundo.",
       "genre": "Shounen",
       "code": "123"
@@ -22,7 +22,7 @@
       "id": "3",
       "title": "Amor de gata",
       "videourl": "https://www.youtube.com/embed/irZZkLW1Ygk?enablejsapi=1&wmode=opaque&autoplay=1",
-      "imageurl": "https://cdn.myanimelist.net/images/anime/1045/106389l.jpg",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/1045/106389.jpg",
       "sinopsis": "Aunque Miyo no logra captar la atención de Kento siendo ella misma, consigue tener éxito interactuando con él en forma de un gato blanco, cariñosamente apodado 'Tarou' por Kento. Pero Miyo pronto se da cuenta de que no puede ayudar a Kento con los diversos problemas que escucha en su forma de gato y ahora se encuentra atrapada entre dos decisiones difíciles. ¿Continuará su relación con él como gato, o revelará su identidad y arriesgará lo que tienen para ayudarlo como su yo humano?.",
       "genre": "Romance",
       "code": "123"
@@ -31,7 +31,7 @@
       "id": "4",
       "title": "Dororo",
       "videourl": "https://www.youtube.com/embed/v3ApcTz1lwE?enablejsapi=1&wmode=opaque&autoplay=1",
-      "imageurl": "https://cdn.myanimelist.net/images/anime/1879/100467l.jpg",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/1879/100467.jpg",
       "sinopsis": "Un señor samurai ha regalado los órganos de su hijo recién nacido a cuarenta y ocho demonios a cambio del dominio en el campo de batalla. Sin embargo, el niño abandonado sobrevive gracias a un curandero que lo equipa con prótesis primitivas, letales con las que el hijo maltratado usará para cazar a la multitud de demonios para reclamar su cuerpo pieza por pieza, antes de enfrentarse a su padre. En sus viajes, el joven héroe se encuentra con un huérfano que dice ser el ladrón más grande de Japón.",
       "genre": "Action",
       "code": "123"
@@ -104,7 +104,7 @@
       "videourl": "https://www.youtube.com/embed/cD8i8K-4Vms?enablejsapi=1&wmode=opaque&autoplay=1",
       "imageurl": "https://cdn.myanimelist.net/images/anime/3/79409.jpg",
       "sinopsis": "La historia de Bungou Stray Dogs se centra alrededor de individuos con poderes sobrenaturales, los cuales usan para distintos propósitos como ayudar personas, resolver misterios, y encargarse de ciertos asuntos con la mafia. La historia sigue a los miembros de \"La Agencia Armada de Detectives\" durante su día a día.",
-      "genre": "Seinen ",
+      "genre": "Seinen",
       "code": "straydogs",
       "id": "1a1500cd-1ac7-470f-a091-dca88133e5d5"
     },
@@ -302,7 +302,7 @@
       "videourl": "https://www.youtube.com/embed/vGuQeQsoRgU?enablejsapi=1&wmode=opaque&autoplay=1",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1498/134443.jpg",
       "sinopsis": "Los habitantes de Tokio viven aterrados: en las sombras de la metrópolis se ocultan horribles monstruos que se camuflan entre la multitud, cazando y devorando seres humanos. Un joven se topa con uno de estos ghouls, pero aunque consigue sobrevivir, su existencia ya no será igual…",
-      "genre": "Seinen ",
+      "genre": "Seinen",
       "code": "ghoul",
       "id": "f3d30a4b-f8bc-49a0-b39c-7c4e84a3b593"
     },
@@ -311,25 +311,16 @@
       "videourl": "https://www.youtube.com/embed/-NLxTEFb2pk?enablejsapi=1&wmode=opaque&autoplay=1",
       "imageurl": "https://cdn.myanimelist.net/images/anime/13/80515.jpg",
       "sinopsis": "La historia está ambientada en la era de la ley seca en los Estados Unidos, y sigue a Angelo Lagusa en su búsqueda de venganza contra la familia Vanetti.",
-      "genre": "Seinen ",
+      "genre": "Seinen",
       "code": "days",
       "id": "9f896b0b-c5a4-4f1b-8f37-e58a78eb59d5"
-    },
-    {
-      "title": "",
-      "videourl": "",
-      "imageurl": "",
-      "sinopsis": "",
-      "genre": "",
-      "code": "",
-      "id": "a0af5fc2-a36e-4e24-b855-eec8a6b8b404"
     },
     {
       "title": "Tomodachi Game",
       "videourl": "https://www.youtube.com/embed/eP2FlJtfwL8?enablejsapi=1&wmode=opaque&autoplay=1",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1247/121345.jpg",
       "sinopsis": "Yūichi Katagiri es un estudiante modelo con cuatro amigos con vidas más difíciles que él. Su tranquila vida cambia cuando 2 millones de yenes para el viaje escolar desaparecen. Yūichi se verá envuelto en una serie de misteriosos juegos psicológicos para recuperar el dinero... o a sus amigos.",
-      "genre": "Seinen ",
+      "genre": "Seinen",
       "code": "game",
       "id": "2fa9392e-3cbb-4c0c-a0ea-f995c6866ea3"
     },
@@ -338,7 +329,7 @@
       "videourl": "https://www.youtube.com/embed/V62kcgCXNJU?enablejsapi=1&wmode=opaque&autoplay=1",
       "imageurl": "https://cdn.myanimelist.net/images/anime/13/77968.jpg",
       "sinopsis": "La historia nos habla de Kei Nagai, un estudiante de preparatoria que descubre ser un Ajin, seres inmortales que son perseguidos por los gobiernos del planeta, los cuales están interesados en saber más acerca de estos y cómo explotar su inmortalidad para beneficio propio.",
-      "genre": "Seinen ",
+      "genre": "Seinen",
       "code": "ajin",
       "id": "3df3b7ba-3cf1-4598-91bf-9ee470e69295"
     },
@@ -347,7 +338,7 @@
       "videourl": "https://www.youtube.com/embed/DuWQOwwI9z4?enablejsapi=1&wmode=opaque&autoplay=1",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1792/136743.jpg",
       "sinopsis": "Kraft Lawrence es un joven que sueña con abrir su propia tienda algún día. Mientras viaja, se encuentra con Holo, una chica lobo que también es una diosa de la cosecha. Por aburrimiento, Holo decide viajar con él, ayudando a Kraft con sus conocimientos de la gente para permitirle convertirse en un comerciante exitoso.",
-      "genre": "Seinen ",
+      "genre": "Seinen",
       "code": "wolf",
       "id": "f8e2bb4a-6677-41f5-a99f-f84c551e108a"
     },
@@ -398,7 +389,7 @@
       "code": "123"
     },
     {
-      "nombre": "Seinen ",
+      "nombre": "Seinen",
       "color": "#256483",
       "description": "Se enfoca en adolescentes y presenta tramas más orientadas a la acción y aventura, el manga seinen aborda temas más profundos y complejos. Estos pueden incluir drama, romance, ciencia ficción, fantasía, historia, política, filosofía y exploración psicológica.",
       "code": "seinen",

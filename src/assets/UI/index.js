@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { secondary } from './variables'
+import { secondary, backgroundPrimary } from './variables'
 
 export const Logo = styled.span`
   color: ${secondary};
@@ -16,6 +16,12 @@ export const StyledButton = styled.button`
 export const ButtonMain = styled(StyledButton)`
   border-radius: 4px;
   background: ${(props) => props.background};
+  color: ${(props) => props.color};
+
+  &:hover {
+    background: ${backgroundPrimary};
+    color: #fff;
+  }
 `
 export const ImageContainer = styled.figure`
   width: 250px;
@@ -30,7 +36,7 @@ export const ImagenVideo = styled.img`
 export const TitleHero = styled.h3`
   font-size: 2.5rem;
   font-weight: 400;
-  color: #fff;
+  color: ${(props) => (props.color ? props.color : '#fff')};
   @media (max-width: 768px) {
     font-size: 1.5rem;
   }

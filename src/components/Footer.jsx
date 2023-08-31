@@ -11,6 +11,10 @@ export const StyledFooter = styled.footer`
   /* background: ${background}; */
   box-sizing: border-box;
   padding: 1rem;
+  @media (max-width: 480px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `
 export const Credits = styled.p`
   color: ${secondary};
