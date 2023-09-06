@@ -25,9 +25,6 @@ export const ButtonMain = styled(StyledButton)`
 `
 export const ImageContainer = styled.figure`
   width: 250px;
-  @media (max-width: 480px) {
-    display: none;
-  }
 `
 export const ImagenVideo = styled.img`
   width: inherit;

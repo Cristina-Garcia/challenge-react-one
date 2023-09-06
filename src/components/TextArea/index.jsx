@@ -1,6 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
-import { FormGroup, LabelFromGroup } from '../../assets/StyledFormGroup'
+import styled, { StyleSheetManager } from 'styled-components'
+import { FormGroup, LabelFromGroup, Error } from '../../assets/StyledFormGroup'
 
 const StyledTextArea = styled.textarea`
   width: 100%;
@@ -17,12 +17,22 @@ const Label = styled(LabelFromGroup)`
   margin-left: 10px;
 `
 
-function TextArea({ name, updateValue, value }) {
+function TextArea({ name, updateValue, value, onBlur, errorInvalid }) {
   return (
-    <FormGroup>
-      <Label>Descripción</Label>
-      <StyledTextArea name={name} value={value} onChange={updateValue} />
-    </FormGroup>
+    <StyleSheetManager shouldForwardProp={(prop) => prop !== 'error'}>
+      <FormGroup error={errorInvalid}>
+        <div>
+          <Label>Sinopsis</Label>
+          <StyledTextArea
+            name={name}
+            value={value}
+            onChange={updateValue}
+            onBlur={onBlur}
+          />
+        </div>
+        {errorInvalid && <Error>{errorInvalid}</Error>}
+      </FormGroup>
+    </StyleSheetManager>
   )
 }
 

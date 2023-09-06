@@ -6,7 +6,7 @@ export const Form = styled.form`
   height: calc(100% - 160px);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   padding-block: 40px;
   margin: 0 auto;
   /* background: ${background}; */
@@ -18,7 +18,9 @@ export const FormGroup = styled.div`
   background: #2a2f4f;
   padding: 0.5rem;
   border-radius: 4px;
+  ${(props) => props.error && `border-bottom:2px solid red`}
 `
+
 export const InputFormFroup = styled.input`
   width: 100%;
   height: 100%;
@@ -38,17 +40,6 @@ export const LabelFromGroup = styled.label`
   pointer-events: none;
   font-size: 18px;
   color: #fff;
-
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 100%;
-    transform: translateX(-100%);
-    transition: all 0.3s ease;
-  }
 `
 export const SpanTextFormGroup = styled.span`
   position: absolute;
@@ -57,4 +48,13 @@ export const SpanTextFormGroup = styled.span`
   transition: all 0.3s ease;
   margin-left: 10px;
   color: #fff;
+`
+
+export const Error = styled.span`
+  color: red;
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  bottom: -17px;
 `

@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import { FormGroup } from '../../assets/StyledFormGroup'
+import { FormGroup, Error } from '../../assets/StyledFormGroup'
 
 const StyledInputColor = styled.input`
   width: 100%;

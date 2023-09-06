@@ -1,25 +1,35 @@
 import React from 'react'
+import { StyleSheetManager } from 'styled-components'
 import {
   FormGroup,
   InputFormFroup,
   LabelFromGroup,
   SpanTextFormGroup,
+  Error,
 } from '../../assets/StyledFormGroup'
 import './InputText.css'
 
-function InputText({ text, name, value, updateValue }) {
+function InputText({ text, name, value, updateValue, onBlur, errorInvalid }) {
   return (
-    <FormGroup>
-      <InputFormFroup
-        type="text"
-        name={name}
-        value={value}
-        onChange={updateValue}
-      />
-      <LabelFromGroup>
-        <SpanTextFormGroup>{text}</SpanTextFormGroup>
-      </LabelFromGroup>
-    </FormGroup>
+    <>
+      <StyleSheetManager shouldForwardProp={(prop) => prop !== 'error'}>
+        <FormGroup error={errorInvalid}>
+          <div>
+            <InputFormFroup
+              type="text"
+              name={name}
+              value={value}
+              onChange={updateValue}
+              onBlur={onBlur}
+            />
+            <LabelFromGroup>
+              <SpanTextFormGroup>{text}</SpanTextFormGroup>
+            </LabelFromGroup>
+          </div>
+          {errorInvalid && <Error>{errorInvalid}</Error>}
+        </FormGroup>
+      </StyleSheetManager>
+    </>
   )
 }
 

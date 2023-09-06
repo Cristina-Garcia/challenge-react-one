@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import InputSelect from './InputSelect'
@@ -7,6 +7,9 @@ import TextArea from './TextArea'
 import { Form } from '../assets/StyledFormGroup.js'
 import { StyledButton } from '../assets/UI'
 import { clientService } from '../Controllers/service.js'
+import { DataContext } from '../Controllers/Context'
+import { useForm } from '../Controllers/useForm'
+import { validationsAnimes } from '../Controllers/validate.js'
 
 export const Title = styled.h1`
   font-size: 60px;
@@ -27,51 +30,34 @@ export const ButtonForm = styled(StyledButton)`
   background: ${({ $primary }) => ($primary ? '#5C469C' : 'white')};
 `
 
+const animeData = {
+  title: '',
+  videourl: '',
+  imageurl: '',
+  sinopsis: '',
+  genre: '',
+  code: '',
+}
+
 function FormVideo() {
-  const [categoriesList, setCategoriesList] = useState([])
-  useEffect(() => {
-    clientService.listCategories().then((datos) => {
-      setCategoriesList(datos)
-    })
-  }, [])
-  const [animeData, setAnimeData] = useState({
-    title: '',
-    videourl: '',
-    imageurl: '',
-    sinopsis: '',
-    genre: '',
-    code: '',
-  })
+  const { categoriesList } = useContext(DataContext)
+
+  const { form, setForm, errors, setErrors, handleBlur, handleChange } =
+    useForm(animeData, validationsAnimes)
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    clientService.createVideo(animeData)
-    setAnimeData({
-      title: '',
-      videourl: '',
-      imageurl: '',
-      sinopsis: '',
-      genre: '',
-      code: '',
-    })
-  }
-
-  const handleChange = (e) => {
-    setAnimeData({
-      ...animeData,
-      [e.target.name]: e.target.value,
-    })
+    setErrors(validationsAnimes(form))
+    if (Object.keys(errors).length === 0) {
+      clientService.createVideo(form)
+    } else {
+      console.log('Hubo algun error')
+    }
+    setForm(animeData)
   }
 
   const cleanForm = () => {
-    setAnimeData({
-      title: '',
-      videourl: '',
-      imageurl: '',
-      sinopsis: '',
-      genre: '',
-      code: '',
-    })
+    setForm(animeData)
   }
   return (
     <Form onSubmit={handleSubmit}>
@@ -79,37 +65,49 @@ function FormVideo() {
       <InputText
         text="Título"
         name="title"
-        value={animeData.title}
+        value={form.title}
         updateValue={handleChange}
+        onBlur={handleBlur}
+        errorInvalid={errors.title}
       />
       <InputText
         text="Link embed del video"
         name="videourl"
-        value={animeData.videourl}
+        value={form.videourl}
         updateValue={handleChange}
+        onBlur={handleBlur}
+        errorInvalid={errors.videourl}
       />
       <InputText
         text="Link imagen del video"
         name="imageurl"
-        value={animeData.imageurl}
+        value={form.imageurl}
         updateValue={handleChange}
+        onBlur={handleBlur}
+        errorInvalid={errors.imageurl}
       />
       <InputSelect
         name="genre"
         categories={categoriesList}
-        value={animeData.genre}
+        value={form.genre}
         updateValue={handleChange}
+        onBlur={handleBlur}
+        errorInvalid={errors.genre}
       />
       <TextArea
         name="sinopsis"
-        value={animeData.sinopsis}
+        value={form.sinopsis}
         updateValue={handleChange}
+        onBlur={handleBlur}
+        errorInvalid={errors.sinopsis}
       />
       <InputText
         text="Código de seguridad"
         name="code"
-        value={animeData.code}
+        value={form.code}
         updateValue={handleChange}
+        onBlur={handleBlur}
+        errorInvalid={errors.code}
       />
       <ButtonContainer>
         <ButtonsActions>

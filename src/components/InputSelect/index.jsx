@@ -13,7 +13,7 @@ export const Select = styled.select`
 
 function InputSelect({ categories, name, value, updateValue }) {
   return (
-    <Select name={name} value={value} onChange={updateValue}>
+    <Select name={name} value={value} onChange={updateValue} required>
       <option value="" disabled defaultValue="">
         Escoja el género principal
       </option>

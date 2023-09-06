@@ -1,5 +1,6 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
+import React, { useContext } from 'react'
+import { useState } from 'react'
+import { DataContext } from '../../Controllers/Context'
 import { Form } from '../../assets/StyledFormGroup'
 import { Title } from '../FormVideo'
 import InputText from '../InputText'
@@ -8,49 +9,58 @@ import { ButtonsActions, ButtonContainer, ButtonForm } from '../FormVideo'
 import Table from '../Table'
 import TextArea from '../TextArea'
 import { clientService } from '../../Controllers/service'
+import { useForm } from '../../Controllers/useForm'
+import { validationsCategories } from '../../Controllers/validate'
 
+const categoryData = {
+  nombre: '',
+  color: '',
+  description: '',
+  code: '',
+}
 function FormCategory() {
-  const [categoriesList, setCategoriesList] = useState([])
-  useEffect(() => {
-    clientService.listCategories().then((datos) => {
-      setCategoriesList(datos)
+  const { form, setForm, errors, setErrors, handleBlur, handleChange } =
+    useForm(categoryData, (formData) => {
+      if (isEditing) {
+        return {}
+      } else {
+        return validationsCategories(formData)
+      }
     })
-  }, [])
-  const [categoryData, setCategoryData] = useState({
-    nombre: '',
-    color: '',
-    description: '',
-    code: '',
-  })
+
+  const { categoriesList, setCategoriesList } = useContext(DataContext)
+
+  // const [categoryData, setCategoryData] = useState({
+  //   nombre: '',
+  //   color: '',
+  //   description: '',
+  //   code: '',
+  // })
 
   const [categoryToUpdate, setCategoryToUpdate] = useState({})
 
   const [isEditing, setIsEditing] = useState(false)
 
-  const handleChange = (e) => {
-    setCategoryData({ ...categoryData, [e.target.name]: e.target.value })
-  }
+  const initalValue = isEditing ? categoryToUpdate : form
+  // const handleChange = (e) => {
+  //   setCategoryData({ ...categoryData, [e.target.name]: e.target.value })
+  // }
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const response = await clientService.createCategory(categoryData)
-    if (response.ok) {
-      const newCategory = await response.json()
-      setCategoriesList((prevCategories) => [...prevCategories, newCategory])
-      setCategoryData({
-        nombre: '',
-        color: '',
-        description: '',
-        code: '',
-      })
+    setErrors(validationsCategories(form))
+    if (Object.keys(errors).length === 0) {
+      const response = await clientService.createCategory(form)
+      if (response.ok) {
+        const newCategory = await response.json()
+        setCategoriesList((prevCategories) => [...prevCategories, newCategory])
+      }
+    } else {
+      alert('Ocurrio un error, favor de verificar')
     }
+    setForm(categoryData)
   }
   const cleanForm = () => {
-    setCategoryData({
-      nombre: '',
-      color: '',
-      description: '',
-      code: '',
-    })
+    setForm(categoryData)
   }
   const handleUpdate = (id) => {
     setIsEditing(true)
@@ -77,12 +87,7 @@ function FormCategory() {
         )
       )
       setIsEditing(false)
-      setCategoryData({
-        nombre: '',
-        color: '',
-        description: '',
-        code: '',
-      })
+      setForm(categoryData)
     }
   }
   const handleDelete = (id) => {
@@ -96,39 +101,38 @@ function FormCategory() {
         <InputText
           text="Nombre"
           name="nombre"
-          value={
-            isEditing === true ? categoryToUpdate.nombre : categoryData.nombre
-          }
+          value={initalValue.nombre}
           updateValue={isEditing === true ? updateData : handleChange}
+          onBlur={handleBlur}
+          errorInvalid={errors.nombre}
         />
         <InputColor
           name="color"
-          value={
-            isEditing === true ? categoryToUpdate.color : categoryData.color
-          }
+          value={initalValue.color}
           updateValue={isEditing === true ? updateData : handleChange}
+          onBlur={handleBlur}
         />
         <TextArea
           name="description"
-          value={
-            isEditing === true
-              ? categoryToUpdate.description
-              : categoryData.description
-          }
+          value={initalValue.description}
           updateValue={isEditing === true ? updateData : handleChange}
+          onBlur={handleBlur}
+          errorInvalid={errors.description}
         />
         <InputText
           text="Código de seguridad"
           name="code"
-          value={isEditing === true ? categoryToUpdate.code : categoryData.code}
+          value={initalValue.code}
           updateValue={isEditing === true ? updateData : handleChange}
+          onBlur={handleBlur}
+          errorInvalid={errors.code}
         />
         <ButtonContainer>
           <ButtonsActions>
             <ButtonForm $primary type="submit">
               Guardar
             </ButtonForm>
-            <ButtonForm onClick={cleanForm}>Limpiar</ButtonForm>
+            <ButtonForm onClick={() => cleanForm}>Limpiar</ButtonForm>
           </ButtonsActions>
         </ButtonContainer>
       </Form>

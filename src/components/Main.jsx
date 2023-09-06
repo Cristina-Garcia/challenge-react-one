@@ -1,24 +1,12 @@
-import { useEffect, useState } from 'react'
+import { useContext, useState } from 'react'
 import SectionPrincipal from './SectionPrincipal'
 import SectionCategory from './SectionCategory'
-import { clientService } from '../Controllers/service'
+import { DataContext } from '../Controllers/Context'
 
 function Main() {
-  const [animeList, setAnimeData] = useState([])
-  const [categoriesList, setCategoriesData] = useState([])
+  const { animeList, categoriesList } = useContext(DataContext)
+
   const [animeId, setAnimeId] = useState()
-
-  useEffect(() => {
-    clientService.listVideos().then((datos) => {
-      setAnimeData(datos)
-    })
-  }, [])
-
-  useEffect(() => {
-    clientService.listCategories().then((datos) => {
-      setCategoriesData(datos)
-    })
-  }, [])
 
   const getId = (id) => {
     setAnimeId(id)
@@ -26,11 +14,7 @@ function Main() {
 
   return (
     <>
-      <SectionPrincipal
-        animes={animeList}
-        animeId={animeId}
-        categories={categoriesList}
-      />
+      <SectionPrincipal animeId={animeId} />
       {categoriesList.map((categorie, index) => {
         if (animeList.find((anime) => anime.genre === categorie.nombre)) {
           return (
