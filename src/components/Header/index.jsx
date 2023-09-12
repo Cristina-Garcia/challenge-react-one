@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { Logo } from '../assets/UI'
-import { StyledButton } from '../assets/UI'
-import { background, lineaColor } from '../assets/UI/variables'
+import { Logo } from '../../assets/UI'
+import { StyledButton } from '../../assets/UI'
+import { background, lineaColor } from '../../assets/UI/variables'
 
 const StyledHeader = styled.header`
   display: flex;
@@ -20,7 +20,7 @@ const Header = () => {
         <Logo>ASTROFLIX</Logo>
       </Link>
       <StyledButton>
-        <Link to="/new-video">Nuevo video</Link>
+        <Link to="/create-video">Nuevo video</Link>
       </StyledButton>
     </StyledHeader>
   )

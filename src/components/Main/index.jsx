@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react'
-import SectionPrincipal from './SectionPrincipal'
-import SectionCategory from './SectionCategory'
-import { DataContext } from '../Controllers/Context'
+import SectionPrincipal from '../SecccionHero'
+import SectionCategory from '../SectionCategories'
+import { DataContext } from '../../Controllers/Context'
 
 function Main() {
   const { animeList, categoriesList } = useContext(DataContext)

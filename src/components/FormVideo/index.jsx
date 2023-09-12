@@ -1,15 +1,15 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import InputSelect from './InputSelect'
-import InputText from './InputText'
-import TextArea from './TextArea'
-import { Form } from '../assets/StyledFormGroup.js'
-import { StyledButton } from '../assets/UI'
-import { clientService } from '../Controllers/service.js'
-import { DataContext } from '../Controllers/Context'
-import { useForm } from '../Controllers/useForm'
-import { validationsAnimes } from '../Controllers/validate.js'
+import InputSelect from '../InputSelect'
+import InputText from '../InputText'
+import TextArea from '../TextArea'
+import { Form } from '../../assets/StyledFormGroup.js'
+import { StyledButton } from '../../assets/UI'
+import { clientService } from '../../Controllers/service.js'
+import { DataContext } from '../../Controllers/Context'
+import { useForm } from '../../Controllers/useForm'
+import { validationsAnimes } from '../../Controllers/validate.js'
 
 export const Title = styled.h1`
   font-size: 60px;
@@ -32,7 +32,7 @@ export const ButtonForm = styled(StyledButton)`
 
 const animeData = {
   title: '',
-  videourl: '',
+  videoId: '',
   imageurl: '',
   sinopsis: '',
   genre: '',
@@ -71,12 +71,12 @@ function FormVideo() {
         errorInvalid={errors.title}
       />
       <InputText
-        text="Link embed del video"
-        name="videourl"
-        value={form.videourl}
+        text="Id embed del video (Ingrese el de Youtube)"
+        name="videoId"
+        value={form.videoId}
         updateValue={handleChange}
         onBlur={handleBlur}
-        errorInvalid={errors.videourl}
+        errorInvalid={errors.videoId}
       />
       <InputText
         text="Link imagen del video"
@@ -117,7 +117,7 @@ function FormVideo() {
           <ButtonForm onClick={cleanForm}>Limpiar</ButtonForm>
         </ButtonsActions>
         <StyledButton>
-          <Link to="/new-category">Nueva Categoria</Link>
+          <Link to="/create-category">Nueva Categoria</Link>
         </StyledButton>
       </ButtonContainer>
     </Form>

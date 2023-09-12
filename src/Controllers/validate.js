@@ -10,10 +10,10 @@ export const validationsAnimes = (form) => {
   } else if (form.title.length >= 40) {
     errors.title = 'No puede tener más de 40 caracteres'
   }
-  if (!form.videourl.trim()) {
-    errors.videourl = 'El campo Link embed del video  es requerido'
-  } else if (!regex.test(form.videourl.trim())) {
-    errors.videourl = 'Debe ingresar una url valida'
+  if (!form.videoId.trim()) {
+    errors.videoId = 'El campo Id del video  es requerido'
+  } else if (form.videoId.length < 11 || form.videoId.length > 11) {
+    errors.videoId = 'Debe ingresar 11 caracteres'
   }
   if (!form.imageurl.trim()) {
     errors.imageurl = 'El campo Link imagen del video  es requerido'

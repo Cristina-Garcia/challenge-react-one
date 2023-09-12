@@ -38,6 +38,9 @@ const CardInfo = styled.div`
   border: 1px solid rgba(12, 19, 79, 0.71);
   padding: 2rem;
 `
+const Header = styled(TitleHero)`
+  margin-block-start: 1rem;
+`
 const Title = styled.h2`
   font-size: 18px;
   font-weight: bold;
@@ -51,9 +54,10 @@ function List() {
       setAnimeList(datos)
     })
   }, [])
+
   return (
     <>
-      <TitleHero>Lista de Animes {categoria}</TitleHero>
+      <Header>Lista de Animes {categoria}</Header>
       <Container>
         {animeList.map((anime) => {
           if (anime.genre === categoria) {

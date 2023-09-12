@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { ButtonMain, TitleHero } from '../assets/UI'
-import { text, backgroundPrimary } from '../assets/UI/variables'
+import { ButtonMain, TitleHero } from '../../assets/UI'
+import { text } from '../../assets/UI/variables'
 
 const Error = styled.div`
   width: 100%;

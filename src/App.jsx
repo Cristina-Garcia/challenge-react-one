@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import GlobalStyle from './GlobalStyle.jsx'
-import Home from './components/Home.jsx'
-import Main from './components/Main.jsx'
-import FormVideo from './components/FormVideo.jsx'
-import FormCategory from './components/FormCategory/index.jsx'
-import List from './components/List.jsx/index.jsx'
-import ErrorPage from './components/ErrorPage.jsx'
+import Home from './components/Home'
+import Main from './components/Main'
+import FormVideo from './components/FormVideo'
+import FormCategory from './components/FormCategory'
+import List from './components/List'
+import ErrorPage from './components/ErrorPage'
 
 const router = createBrowserRouter([
   {
@@ -18,11 +18,11 @@ const router = createBrowserRouter([
         element: <Main />,
       },
       {
-        path: 'new-video',
+        path: 'create-video',
         element: <FormVideo />,
       },
       {
-        path: 'new-category',
+        path: 'create-category',
         element: <FormCategory />,
       },
       {

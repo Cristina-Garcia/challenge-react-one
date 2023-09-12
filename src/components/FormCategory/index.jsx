@@ -6,7 +6,7 @@ import { Title } from '../FormVideo'
 import InputText from '../InputText'
 import InputColor from '../InputColor'
 import { ButtonsActions, ButtonContainer, ButtonForm } from '../FormVideo'
-import Table from '../Table'
+import Table from '../TableCategories'
 import TextArea from '../TextArea'
 import { clientService } from '../../Controllers/service'
 import { useForm } from '../../Controllers/useForm'
@@ -18,6 +18,7 @@ const categoryData = {
   description: '',
   code: '',
 }
+
 function FormCategory() {
   const { form, setForm, errors, setErrors, handleBlur, handleChange } =
     useForm(categoryData, (formData) => {
@@ -30,21 +31,12 @@ function FormCategory() {
 
   const { categoriesList, setCategoriesList } = useContext(DataContext)
 
-  // const [categoryData, setCategoryData] = useState({
-  //   nombre: '',
-  //   color: '',
-  //   description: '',
-  //   code: '',
-  // })
-
   const [categoryToUpdate, setCategoryToUpdate] = useState({})
 
   const [isEditing, setIsEditing] = useState(false)
 
   const initalValue = isEditing ? categoryToUpdate : form
-  // const handleChange = (e) => {
-  //   setCategoryData({ ...categoryData, [e.target.name]: e.target.value })
-  // }
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     setErrors(validationsCategories(form))

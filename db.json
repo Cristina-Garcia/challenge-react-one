@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "D.Gray-man",
-      "videourl": "https://www.youtube.com/embed/GIOe6KZrHBA?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "GIOe6KZrHBA",
       "imageurl": "https://cdn.myanimelist.net/images/anime/13/75194.jpg",
       "sinopsis": "La historia gira alrededor de Allen Walker, un exorcista, al final imaginario del siglo XIX en Europa. Allen es un miembro de la orden religiosa oscura, formado por exorcistas, conectados con el Vaticano. La misión de la Orden es detener al Conde del Milenio, espíritu necrófago maligno que se propone limpiar el mundo destruyendo a todos los seres humanos con sus armas llamadas 'Akuma'.",
       "genre": "Shounen",
@@ -12,7 +12,7 @@
     {
       "id": "2",
       "title": "Golden Time",
-      "videourl": "https://www.youtube.com/embed/44njDYJ5OJA?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "44njDYJ5OJA",
       "imageurl": "https://cdn.myanimelist.net/images/anime/12/52091l.jpg",
       "sinopsis": "Debido a un trágico accidente, Banri sufre de amnesia. Sin embargo, después de hacerse amigo de Mitsuo Yanagisawa, decide seguir adelante y comenzar una nueva vida en la facultad de derecho en Tokio. Pero justo cuando está empezando a adaptarse a su vida universitaria, la hermosa Kouko Kaga irrumpe dramáticamente en la vida de Banri, y su encuentro fortuito marca el inicio de un año inolvidable.",
       "genre": "Drama",
@@ -21,7 +21,7 @@
     {
       "id": "3",
       "title": "Amor de gata",
-      "videourl": "https://www.youtube.com/embed/irZZkLW1Ygk?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "irZZkLW1Ygk",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1045/106389.jpg",
       "sinopsis": "Miyo 'Muge' Sasaki es una joven estudiante de secundaria que se ha enamorado de su compañero Kento Hinode. Aunque le persigue todos los días, él nunca parece percatarse de su presencia. Un día, de manera fortuita, descubre una máscara con la que se transforma en un gato llamado Tarō. Esto le permite acercarse a Kento, pero también corre el riesgo de no poder volver a transformarse en humano.",
       "genre": "Romance",
@@ -30,7 +30,7 @@
     {
       "id": "4",
       "title": "Dororo",
-      "videourl": "https://www.youtube.com/embed/v3ApcTz1lwE?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "v3ApcTz1lwE",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1879/100467.jpg",
       "sinopsis": "Un señor samurai ha regalado los órganos de su hijo recién nacido a cuarenta y ocho demonios a cambio del dominio en el campo de batalla. Sin embargo, el niño abandonado sobrevive gracias a un curandero que lo equipa con prótesis primitivas que usará para cazar a la multitud de demonios para reclamar su cuerpo pieza por pieza. En sus viajes, el joven héroe se encuentra con un huérfano que dice ser el ladrón más grande de Japón.",
       "genre": "Action",
@@ -39,7 +39,7 @@
     {
       "id": "5",
       "title": "One piece",
-      "videourl": "https://www.youtube.com/embed/MCb13lbVGE0?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "MCb13lbVGE0",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1100/116767.jpg",
       "sinopsis": "One Piece narra la historia de un joven llamado Monkey D. Luffy, que inspirado por su amigo pirata Shanks, comienza un viaje para alcanzar su sueño, ser el Rey de los piratas, para lo cual deberá encontrar el tesoro One Piece dejado por el anterior rey de los piratas Gol D. Roger.",
       "genre": "Adventure",
@@ -48,7 +48,7 @@
     {
       "id": "6",
       "title": "Death Note",
-      "videourl": "https://www.youtube.com/embed/Vt_3c8BgxV4?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "Vt_3c8BgxV4",
       "imageurl": "https://cdn.myanimelist.net/images/anime/9/9453.jpg",
       "sinopsis": "Light Yagami es un joven estudiante que un día encuentra un cuaderno llamado Death Note que tiene una macabra propiedad: si el nombre de una persona aparece escrito en él, morirá. Light decide, entonces, embarcarse en una misión para librar al mundo de todos los criminales. Sin embargo, su plan empieza a torcerse cuando L, un brillante detective, intenta descifrar el misterio que rodea a todas estas muertes.",
       "genre": "Gore",
@@ -57,7 +57,7 @@
     {
       "id": "7",
       "title": "Blood C",
-      "videourl": "https://www.youtube.com/embed/UqpRUvLoUuM?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "UqpRUvLoUuM",
       "imageurl": "https://cdn.myanimelist.net/images/anime/2/31649l.jpg",
       "sinopsis": "Saya Kisaragi lleva una vida normal en el instituto y disfruta de su día a día. Sin embargo, una noche su padre le encomienda una misión como heredera del Templo Ukishima. Los llamados 'Ancianos'('Furukimono') cazan y devoran humanos. Sólo Saya será capaz de acabar con estos seres y poder así proteger la ciudad y su querido instituto.",
       "genre": "Gore",
@@ -66,7 +66,7 @@
     {
       "id": "8",
       "title": "Deadman Wonderland",
-      "videourl": "https://www.youtube.com/embed/WUTFRxi5RXM?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "WUTFRxi5RXM",
       "imageurl": "https://cdn.myanimelist.net/images/anime/9/75299.jpg",
       "sinopsis": "Ganta Igarashi mientras está en clase ve, por la ventana, a un hombre cubierto de sangre. Segundos después el hombre mata a todos sus compañeros, y cuando cree ser el siguiente, el asesino le incrusta un cristal carmesí en el pecho. Ganta es acusado por los asesinatos y condenado a cadena perpetua en Deadman Wonderland.Para poder sobrevivir, Ganta deberá participar en los mortales juegos de Deadman Wonderland.",
       "genre": "Gore",
@@ -75,7 +75,7 @@
     {
       "id": "9",
       "title": "Dragon ball",
-      "videourl": "https://www.youtube.com/embed/fg_fP7cRJXg?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "fg_fP7cRJXg",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1887/92364.jpg",
       "sinopsis": "'Dragon Ball' se centra en Son Goku, que después de la muerte de su abuelo, conoce a Bulma, la hija de uno de los científicos más brillantes del mundo. Ella le invita a hacer una gran búsqueda de siete esferas de las legendarias Dragon Balls, que al ser reunidas dan lugar a la aparición del dragón sagrado que puede conceder cualquier deseo, pero solo uno.",
       "genre": "Adventure",
@@ -84,7 +84,7 @@
     {
       "id": "10",
       "title": "Psycho pass",
-      "videourl": "https://www.youtube.com/embed/DgDBzAHg4wU?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "DgDBzAHg4wU",
       "imageurl": "https://cdn.myanimelist.net/images/anime/5/43399.jpg",
       "sinopsis": "En un futuro cercano en el cual la sociedad japonesa está regida por un sistema denominado Sybil, es posible medir el estado mental de las personas así como su propensidad a volverse criminales, esto mediante un escáner que determina el Psycho-Pass: un valor numérico, el coeficiente de criminalidad, que sube o baja dependiendo de la situación del individuo; y un color, que al ser claro o oscuro, determina la estabilidad mental de la persona.",
       "genre": "Action",
@@ -92,7 +92,7 @@
     },
     {
       "title": "After the rain",
-      "videourl": "https://www.youtube.com/embed/bHULBRnBenQ?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "bHULBRnBenQ",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1271/90136.jpg",
       "sinopsis": "Akira Tachibana (Nana Komatsu) es una estudiante de secundaria de 17 años. Una vez fue una atleta prometedora, pero una lesión le ha impedido participar en atletismo. Un día, Akira Tachibana va a un restaurante familiar y el gerente le habla con voz tierna.",
       "genre": "Romance",
@@ -101,7 +101,7 @@
     },
     {
       "title": "Bungou Stray Dogs",
-      "videourl": "https://www.youtube.com/embed/cD8i8K-4Vms?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "cD8i8K-4Vms",
       "imageurl": "https://cdn.myanimelist.net/images/anime/3/79409.jpg",
       "sinopsis": "La historia de Bungou Stray Dogs se centra alrededor de individuos con poderes sobrenaturales, los cuales usan para distintos propósitos como ayudar personas, resolver misterios, y encargarse de ciertos asuntos con la mafia. La historia sigue a los miembros de \"La Agencia Armada de Detectives\" durante su día a día.",
       "genre": "Seinen",
@@ -110,7 +110,7 @@
     },
     {
       "title": "A galaxy next Door",
-      "videourl": "https://www.youtube.com/embed/GZjo6FYjEw4?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "GZjo6FYjEw4",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1091/135041.jpg",
       "sinopsis": "Desde que su padre murió, Ichirou Kuga ha luchado para mantener a sus dos hermanos menores con una pequeña herencia y su pasión por dibujar manga. Pero cada vez es más difícil ...Justo cuando se acerca a su punto de quiebre, la hermosa y aterradoramente competente Shiori Goshiki solicita convertirse en su nueva asistente. Pero hay algo casi de otro mundo en Goshiki...",
       "genre": "Romance",
@@ -119,7 +119,7 @@
     },
     {
       "title": "Tomo-chan Is a Girl!",
-      "videourl": "https://www.youtube.com/embed/PVypUPrFewg?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "PVypUPrFewg",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1444/131828.jpg",
       "sinopsis": "Una juvenil comedia romántica entre Tomo Aizawa (Tomo-chan), una chica algo masculina y su denso amigo de la infancia Junichiro Kubota. La joven estudiante quiere que él la vea como una chica real, pero todos los intentos terminan en vano.",
       "genre": "Romance",
@@ -128,7 +128,7 @@
     },
     {
       "title": "Koikimo",
-      "videourl": "https://www.youtube.com/embed/x18yC9Mt-mA?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "x18yC9Mt-mA?",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1519/110527.jpg",
       "sinopsis": "Una vez que te enamoras de alguien, no puedes detener el amor. Un extraño encuentro estimula la relación entre Amakusa Ryou, un hombre de negocios que suele tontear con mujeres, y la mejor amiga de su hermana, Arima Ichika, una chica de secundaria. A partir de ahí, se enamora perdidamente. ",
       "genre": "Romance",
@@ -137,7 +137,7 @@
     },
     {
       "title": "Say 'I Love You'.",
-      "videourl": "https://www.youtube.com/embed/-RoSoU_h5SY?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "-RoSoU_h5SY",
       "imageurl": "https://cdn.myanimelist.net/images/anime/11/39777.jpg",
       "sinopsis": "Mei Tachibana es una joven tranquila y modesta de dieciséis años de edad que ha pasado sus años de instituto sin hacer amistad o conseguir un novio. Cuando conoce al chico popular Yamato Kurosawa, quien se interesa en ella, comienza una relación gracias a la cual Mei se abre y comienza a diversificar su perspectiva de la vida y a hacer amistad con otras personas.",
       "genre": "Romance",
@@ -146,7 +146,7 @@
     },
     {
       "title": "Toradora!",
-      "videourl": "https://www.youtube.com/embed/ya570uUgQNc?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "ya570uUgQNc",
       "imageurl": "https://cdn.myanimelist.net/images/anime/13/22128.jpg",
       "sinopsis": "Takasu Ryuuji comienza su segundo año de instituto con mucho ánimo. Sin embargo, hay una cosa que el odia, y es su mirada, con lo cual posee una habilidad innata para intimidar a los demás, provocándole esto muchos malentendidos con sus compañeros. No obstante, todo esto va cambiar el primer día de clases, cuando Ryuuji tiene un encontronazo con Aisaka Taiga, la persona mas peligrosa del centro.",
       "genre": "Romance",
@@ -155,7 +155,7 @@
     },
     {
       "title": "Attack on Titan",
-      "videourl": "https://www.youtube.com/embed/LHtdKWJdif4?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "MGRm4IzK1SQ",
       "imageurl": "https://cdn.myanimelist.net/images/anime/10/47347.jpg",
       "sinopsis": "Hace cien años, los Titanes aparecieron. Ante esta invasión, la humanidad se vio obligada a esconderse tras enormes muros para no convertirse en alimento. De esta manera los seres humanos pudieron volver a conocer la paz y la prosperidad, hasta el punto de casi olvidar la verdadera razón por la que vivían encerrados. Entonces aparece Eren Jaeger, un joven que sueña con el mundo exterior, hastiado del conformismo.",
       "genre": "Action",
@@ -164,7 +164,7 @@
     },
     {
       "title": "Hell's Paradise",
-      "videourl": "https://www.youtube.com/embed/1JLeeulO8AU?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "1JLeeulO8AU",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1075/131925.jpg",
       "sinopsis": "Gabimaru, una vez denominado como el ninja más fuerte, deja su oficio, violando las leyes de su poblado ninja. Cuando es capturado, dice que no tiene nada por lo que vivir, pero debido a su nivel de entrenamiento superhumano, consigue sobrevivir a las diferentes ejecuciones que se le aplican.",
       "genre": "Action",
@@ -173,7 +173,7 @@
     },
     {
       "title": "Dead Mount Death Play",
-      "videourl": "https://www.youtube.com/embed/IOkS_GU9BNc?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "IOkS_GU9BNc",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1930/133758.jpg",
       "sinopsis": "Después de luchar contra el héroe Calamity Crusher, Corpse God, un nigromante de un poder inaudito, se reencarna en Polka Shinoyama, un joven que vive en el actual Shinjuku. Él ya sólo quiere calma y una apacible vida en Shinjuku... pero el barrio tiene otras ideas para Polka.",
       "genre": "Action",
@@ -182,7 +182,7 @@
     },
     {
       "title": "Golden Kamuy",
-      "videourl": "https://www.youtube.com/embed/5olutLS6mdo?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "5olutLS6mdo",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1145/90880.jpg",
       "sinopsis": "La trama se desarrolla en el Hokkaido, a comienzos del siglo XX, justo después de la guerra entre Japón y Rusia. En este escenario, Saichi Sugimoto, apodado como Sugimoto el inmortal, se dedica a la búsqueda insaciable de oro para cumplir la promesa que le hizo a un amigo muerto en batalla de cuidar a su familia.",
       "genre": "Action",
@@ -191,7 +191,7 @@
     },
     {
       "title": "Demon Slayer",
-      "videourl": "https://www.youtube.com/embed/6vMuWuWlW4I?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "6vMuWuWlW4I",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1286/99889.jpg",
       "sinopsis": "Tanjirou Kamado es un chico inteligente y de buen corazón que vive con su familia y gana dinero vendiendo carbón. Todo cambia cuando su familia es atacada y asesinada por un demonio. Tanjirou y su hermana Nezuko son los únicos sobrevivientes del incidente, aunque Nezuko fue convertida en demonio. Tanjirou se convierte en un asesino de demonios para ayudar a su hermana a volverse humana nuevamente y vengar la muerte de su familia.",
       "genre": "Shounen",
@@ -200,7 +200,7 @@
     },
     {
       "title": "Jujutsu Kaisen",
-      "videourl": "https://www.youtube.com/embed/aPBUUJbrAWo?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "aPBUUJbrAWo",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1171/109222.jpg",
       "sinopsis": "Yūji Itadori, quien accidentalmente se convierte en el huésped de un una poderosa maldición llamada Ryōmen Sukuna. Para combatir a esta entidad en su interior, Yūji se une a una organización secreta de Hechiceros Jujutsu y así poder aprender las habilidades necesarias para defenderse.",
       "genre": "Shounen",
@@ -209,7 +209,7 @@
     },
     {
       "title": "Dr. Stone",
-      "videourl": "https://www.youtube.com/embed/2ei4KpfCOAI?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "2ei4KpfCOAI",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1613/102576.jpg",
       "sinopsis": "Un fatídico día, toda la humanidad quedó petrificada por un destello de luz cegadora. Después de varios milenios, el estudiante de secundaria Taiju se despierta y se encuentra perdido en un mundo de estatuas. Sin embargo, no está solo. Su ídolo científico, Senku, ha estado trabajando durante varios meses y tiene un gran plan en mente para impulsar la civilización con el poder de la ciencia.",
       "genre": "Shounen",
@@ -218,7 +218,7 @@
     },
     {
       "title": "Mashle: Magic and Muscles",
-      "videourl": "https://www.youtube.com/embed/Hbz4shbCPCA?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "Hbz4shbCPCA",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1218/135107.jpg",
       "sinopsis": "¡En un mundo donde la magia es la ley, una vez existió Mash Burnedead! Criado en lo profundo del bosque, el joven divide sus días entre hacer ejercicio y comer bollos de crema. Pero un día, un oficial de policía descubre su secreto: nació sin poderes mágicos, ¡lo que se castiga con la muerte!",
       "genre": "Shounen",
@@ -227,7 +227,7 @@
     },
     {
       "title": "My Hero Academia",
-      "videourl": "https://www.youtube.com/embed/D5fYOnwYkj4?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "D5fYOnwYkj4",
       "imageurl": "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
       "sinopsis": "Las personas no nacen igual. El protagonista de esta historia es uno de esos casos raros que nacen sin superpoderes, pero esto no le impedirá perseguir su sueño: ser un gran héroe como el legendario All-Might. Para convertirse en el héroe que quiere ser, se apuntará a una de las academias de héroes más prestigiosas del país: Yueiko. Con la ayuda de su ídolo, All-Might, ¿podrá convertirse en un verdadero héroe?",
       "genre": "Shounen",
@@ -236,7 +236,7 @@
     },
     {
       "title": "Mushoku Tensei: Jobless Reincarnation",
-      "videourl": "https://www.youtube.com/embed/Qx01pn9l-6g?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "Qx01pn9l-6g?",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1530/117776.jpg",
       "sinopsis": "Un joven virgen \"nini\" de 34 años es echado de casa cuando se queda sin dinero. Él se arrepiente de su vida cuando muere en un accidente de tráfico. Tras el accidente, se reencarna en un bebé en un mundo fantástico de espada y brujería.",
       "genre": "Adventure",
@@ -245,7 +245,7 @@
     },
     {
       "title": "Fairy Tail",
-      "videourl": "https://www.youtube.com/embed/mU1yER7VEZA?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "mU1yER7VEZA",
       "imageurl": "https://cdn.myanimelist.net/images/anime/5/18179.jpg",
       "sinopsis": "La serie relata las aventuras del joven mago Natsu Dragneel y su gato parlante Happy que viajan juntos en busca del dragón Igneel, el cual Natsu declara que es su padre adoptivo, hasta que un día conocen a una chica llamada Lucy Heartfilia, una maga de espíritus celestiales.",
       "genre": "Adventure",
@@ -254,7 +254,7 @@
     },
     {
       "title": "That Time I Got Reincarnated as a Slime",
-      "videourl": "https://www.youtube.com/embed/uOzwqb74K34?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "uOzwqb74K34",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1069/123309.jpg",
       "sinopsis": "La serie relata la historia de Satoru Mikami, un asalariado de 37 años que es asesinado tras ser apuñalado por un ladrón y se reencarna en un mundo de espadas y magia como un Slime con poderes únicos y reúne aliados para construir su propia nación de monstruos.",
       "genre": "Adventure",
@@ -263,7 +263,7 @@
     },
     {
       "title": "Hunter x Hunter",
-      "videourl": "https://www.youtube.com/embed/D9iTQRB4XRk?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "D9iTQRB4XRk",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1337/99013.jpg",
       "sinopsis": "La trama nos sitúa en un mundo fantástico en el que existen bestias maléficas, tesoros ocultos… y hunters o «cazadores», personas que viven increíbles peripecias para desentrañar los misterios del planeta. Gon Freecss es un muchacho que se presenta a los exámenes de hunter con el fin de obtener la tarjeta de licencia. Para superarlos, debe demostrar que posee las habilidades que requiere un trabajo tan complicado y peligroso como ese.",
       "genre": "Adventure",
@@ -272,7 +272,7 @@
     },
     {
       "title": "Another",
-      "videourl": "https://www.youtube.com/embed/UGoAl3L13bc?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "UGoAl3L13bc1",
       "imageurl": "https://cdn.myanimelist.net/images/anime/4/75509.jpg",
       "sinopsis": "En la primavera de 1998, un chico de 15 años llamado Koichi Sakakibara es trasladado a esa misma clase, ahí conoce a Mei Misaki, una chica bastante rara a la que tanto sus profesores como compañeros de clase ignoran. Inesperadamente una serie de asesinatos causa la desesperación entre los alumnos de la clase 3-3.",
       "genre": "Gore",
@@ -281,7 +281,7 @@
     },
     {
       "title": "The Future Diary ",
-      "videourl": "https://www.youtube.com/embed/KfznTm8mJA4?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "KfznTm8mJA4",
       "imageurl": "https://cdn.myanimelist.net/images/anime/10/22971.jpg",
       "sinopsis": "Yukiteru Amano es un estudiante de segundo año de secundaria solitario e introvertido, quien gasta todo su tiempo escribiendo un diario en su celular desde el punto de vista de un espectador. Su único amigo es un producto de su imaginación, Deus Ex Machina, el Dios del Tiempo y el Espacio.",
       "genre": "Gore",
@@ -290,7 +290,7 @@
     },
     {
       "title": "Hell Girl",
-      "videourl": "https://www.youtube.com/embed/ofIl6PWLY8g?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "ofIl6PWLY8g",
       "imageurl": "https://cdn.myanimelist.net/images/anime/4/86907.jpg",
       "sinopsis": "¿Qué harías si tuvieses el poder de enviar a tus enemigos inmediatamente a los confines del infierno? En Jigoku Shoujo podemos presenciar cuáles serían las consecuencias de tales acciones ...",
       "genre": "Gore",
@@ -299,7 +299,7 @@
     },
     {
       "title": "Tokyo Ghoul",
-      "videourl": "https://www.youtube.com/embed/vGuQeQsoRgU?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "vGuQeQsoRgU",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1498/134443.jpg",
       "sinopsis": "Los habitantes de Tokio viven aterrados: en las sombras de la metrópolis se ocultan horribles monstruos que se camuflan entre la multitud, cazando y devorando seres humanos. Un joven se topa con uno de estos ghouls, pero aunque consigue sobrevivir, su existencia ya no será igual…",
       "genre": "Seinen",
@@ -308,7 +308,7 @@
     },
     {
       "title": "91 Days",
-      "videourl": "https://www.youtube.com/embed/-NLxTEFb2pk?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "-NLxTEFb2pk",
       "imageurl": "https://cdn.myanimelist.net/images/anime/13/80515.jpg",
       "sinopsis": "La historia está ambientada en la era de la ley seca en los Estados Unidos, y sigue a Angelo Lagusa en su búsqueda de venganza contra la familia Vanetti.",
       "genre": "Seinen",
@@ -317,7 +317,7 @@
     },
     {
       "title": "Tomodachi Game",
-      "videourl": "https://www.youtube.com/embed/eP2FlJtfwL8?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "eP2FlJtfwL8",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1247/121345.jpg",
       "sinopsis": "Yūichi Katagiri es un estudiante modelo con cuatro amigos con vidas más difíciles que él. Su tranquila vida cambia cuando 2 millones de yenes para el viaje escolar desaparecen. Yūichi se verá envuelto en una serie de misteriosos juegos psicológicos para recuperar el dinero... o a sus amigos.",
       "genre": "Seinen",
@@ -326,7 +326,7 @@
     },
     {
       "title": "Ajin: Demi-Human",
-      "videourl": "https://www.youtube.com/embed/V62kcgCXNJU?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "V62kcgCXNJU",
       "imageurl": "https://cdn.myanimelist.net/images/anime/13/77968.jpg",
       "sinopsis": "La historia nos habla de Kei Nagai, un estudiante de preparatoria que descubre ser un Ajin, seres inmortales que son perseguidos por los gobiernos del planeta, los cuales están interesados en saber más acerca de estos y cómo explotar su inmortalidad para beneficio propio.",
       "genre": "Seinen",
@@ -335,7 +335,7 @@
     },
     {
       "title": "Spice and Wolf",
-      "videourl": "https://www.youtube.com/embed/DuWQOwwI9z4?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "DuWQOwwI9z4",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1792/136743.jpg",
       "sinopsis": "Kraft Lawrence es un joven que sueña con abrir su propia tienda algún día. Mientras viaja, se encuentra con Holo, una chica lobo que también es una diosa de la cosecha. Por aburrimiento, Holo decide viajar con él, ayudando a Kraft con sus conocimientos de la gente para permitirle convertirse en un comerciante exitoso.",
       "genre": "Seinen",
@@ -344,7 +344,7 @@
     },
     {
       "title": "Beautiful Bones",
-      "videourl": "https://www.youtube.com/embed/-pDRype0mQU?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "-pDRype0mQU",
       "imageurl": "https://cdn.myanimelist.net/images/anime/7/76116.jpg",
       "sinopsis": "Sakurako-san no Ashimoto ni wa Shitai ga Umatteiru se centra en un estudiante de preparatoria, Shotaro Tatewaki y su hermosa novia, Sakurako Kujo, quien ama los huesos hermosos. Debido a la naturaleza de sus intereses, ambos se envuelven en todo tipo de incidentes que involucren huesos.",
       "genre": "Gore",
@@ -353,7 +353,7 @@
     },
     {
       "title": "Inuyasha",
-      "videourl": "https://www.youtube.com/embed/n5f47FVUlrs?enablejsapi=1&wmode=opaque&autoplay=1",
+      "videoId": "n5f47FVUlrs",
       "imageurl": "https://cdn.myanimelist.net/images/anime/1589/95329.jpg",
       "sinopsis": "Kagome Higurashi, una estudiante de 15 años en Tokyo, es transportada al período Sengoku de Japón, donde conoce al mitad perro-demonio. Inuyasha. Un monstruo de esa era intenta coger la joya Shikon y ella parte la joya en muchas pienzas dispersadas, ahora, por todo Japón.",
       "genre": "Adventure",

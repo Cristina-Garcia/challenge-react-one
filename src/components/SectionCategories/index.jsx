@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Imagen from './Imagen'
-import { ButtonMain } from '../assets/UI'
+import Imagen from '../Imagen'
+import { ButtonMain } from '../../assets/UI'
 import Slider from 'react-slick'
 
 const StyledSection = styled.section`
