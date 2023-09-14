@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { StyleSheetManager } from 'styled-components'
 import { FormGroup, LabelFromGroup, Error } from '../../assets/StyledFormGroup'
+import { textLight } from '../../assets/UI/variables'
 
 const StyledTextArea = styled.textarea`
   width: 100%;
@@ -9,9 +10,9 @@ const StyledTextArea = styled.textarea`
   border: none;
   background: inherit;
   outline: 0px;
-  caret-color: #fff;
+  caret-color: ${textLight};
   resize: none;
-  color: white;
+  color: ${textLight};
 `
 const Label = styled(LabelFromGroup)`
   margin-left: 10px;

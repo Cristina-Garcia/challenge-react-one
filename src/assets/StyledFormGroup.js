@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { background } from '../assets/UI/variables'
+import { textLight } from './UI/variables'
 
 export const Form = styled.form`
   width: 90vw;
@@ -9,7 +9,6 @@ export const Form = styled.form`
   gap: 1.5rem;
   padding-block: 40px;
   margin: 0 auto;
-  /* background: ${background}; */
 `
 
 export const FormGroup = styled.div`
@@ -28,8 +27,8 @@ export const InputFormFroup = styled.input`
   border: none;
   background: inherit;
   outline: 0px;
-  caret-color: #fff;
-  color: white;
+  caret-color: ${textLight};
+  color: ${textLight};
 `
 export const LabelFromGroup = styled.label`
   position: absolute;
@@ -39,7 +38,7 @@ export const LabelFromGroup = styled.label`
   height: 100%;
   pointer-events: none;
   font-size: 18px;
-  color: #fff;
+  color: ${textLight};
 `
 export const SpanTextFormGroup = styled.span`
   position: absolute;
@@ -47,7 +46,7 @@ export const SpanTextFormGroup = styled.span`
   left: 0;
   transition: all 0.3s ease;
   margin-left: 10px;
-  color: #fff;
+  color: ${textLight};
 `
 
 export const Error = styled.span`

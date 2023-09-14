@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
-import { clientService } from '../../Controllers/service'
+import { DataContext } from '../../Controllers/Context'
 import { TitleHero } from '../../assets/UI'
+import { textLight } from '../../assets/UI/variables'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -28,7 +29,7 @@ const CardInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  color: white;
+  color: ${textLight};
   height: min(200px, auto);
   /* From https://css.glass */
   background: rgba(12, 19, 79, 0.68);
@@ -44,16 +45,11 @@ const Header = styled(TitleHero)`
 const Title = styled.h2`
   font-size: 18px;
   font-weight: bold;
-  color: white;
+  color: ${textLight};
 `
 function List() {
+  const { animeList } = useContext(DataContext)
   const { categoria } = useParams()
-  const [animeList, setAnimeList] = useState([])
-  useEffect(() => {
-    clientService.listVideos().then((datos) => {
-      setAnimeList(datos)
-    })
-  }, [])
 
   return (
     <>

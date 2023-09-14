@@ -1,7 +1,12 @@
 #video-hero {
-  width: 100%;
+  width: 90%;
   height: 600px;
   border: none;
+}
+@media (max-width: 768px) {
+  #video-hero {
+    width: 100%;
+  }
 }
 @media (max-width: 480px) {
   #video-hero {

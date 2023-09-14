@@ -1,14 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Logo } from '../../assets/UI/index.js'
-import { background, lineaColor, secondary } from '../../assets/UI/variables.js'
+import { lineaColor, secondary } from '../../assets/UI/variables.js'
 
 export const StyledFooter = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid ${lineaColor};
-  /* background: ${background}; */
   box-sizing: border-box;
   padding: 1rem;
   @media (max-width: 480px) {

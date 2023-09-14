@@ -8,9 +8,11 @@ export const DataContext = createContext()
 export const DataProvider = ({ children }) => {
   const [animeList, setAnimeList] = useState([])
   const [categoriesList, setCategoriesList] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true)
       try {
         const animes = await clientService.listVideos()
         setAnimeList(animes)
@@ -23,12 +25,19 @@ export const DataProvider = ({ children }) => {
       } catch (error) {
         console.log('Error', error)
       }
+      setLoading(false)
     }
     fetchData()
   }, [])
   return (
     <DataContext.Provider
-      value={{ animeList, setAnimeList, categoriesList, setCategoriesList }}
+      value={{
+        animeList,
+        setAnimeList,
+        categoriesList,
+        setCategoriesList,
+        loading,
+      }}
     >
       {children}
     </DataContext.Provider>

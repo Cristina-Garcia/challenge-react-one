@@ -1,6 +1,7 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import { FormGroup, Error } from '../../assets/StyledFormGroup'
+import { FormGroup } from '../../assets/StyledFormGroup'
+import { textLight } from '../../assets/UI/variables'
 
 const StyledInputColor = styled.input`
   width: 100%;
@@ -10,7 +11,7 @@ const StyledInputColor = styled.input`
   background: none;
 `
 const Label = styled.label`
-  color: #fff;
+  color: ${textLight};
   font-size: 12px;
 `
 

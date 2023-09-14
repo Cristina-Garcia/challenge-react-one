@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { textLight } from '../../assets/UI/variables'
 
 const InfoCategory = styled.ul`
   background-color: black;
@@ -11,12 +12,12 @@ const InfoCategory = styled.ul`
   justify-content: center;
 `
 const Info = styled.li`
-  color: #fff;
+  color: ${textLight};
   list-style: none;
   padding-left: 0.5rem;
 `
 const Icon = styled.button`
-  color: #fff;
+  color: ${textLight};
   border: none;
   background: transparent;
   width: 20px;

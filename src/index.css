@@ -1,11 +1,8 @@
 #root {
-  /* background: linear-gradient(
-    50deg,
-    rgba(29, 38, 125, 1) 30%,
-    rgba(12, 19, 79, 1) 50%
-  ); */
-  background-image: url('./ceu-noturno-standret-freepik.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #000620;
   width: 100vw;
+
+  /* background-image: url('./ceo-nocturno-standret-freepik.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
 }

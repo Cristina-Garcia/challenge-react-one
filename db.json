@@ -359,6 +359,15 @@
       "genre": "Adventure",
       "code": "inuyasha",
       "id": "4a0cf2db-a2a7-4f51-9f8d-fd62b96cd4df"
+    },
+    {
+      "title": "Code Geass:Hangyaku no Lelouch",
+      "videoId": "qhhWOROY4iI",
+      "imageurl": "https://cdn.myanimelist.net/images/anime/1032/135088.jpg",
+      "sinopsis": "Lelouch Lamperouge, un estudiante británico, desafortunadamente se encuentra atrapado en un fuego entre las fuerzas armadas británicas y el área 11. Sin embargo, puede escapar gracias a la aparición oportuna de una misteriosa niña llamada C.C., que otorga sus geass, el Geass, el 'Poder de los reyes'",
+      "genre": "Mecha",
+      "code": "geass",
+      "id": "a900d353-a235-4a8d-b8de-daf876df70f9"
     }
   ],
   "categories": [
@@ -400,7 +409,7 @@
     {
       "nombre": "Seinen",
       "color": "#256483",
-      "description": "Se enfoca en adolescentes y presenta tramas más orientadas a la acción y aventura, el manga seinen aborda temas más profundos y complejos. Estos pueden incluir drama, romance, ciencia ficción, fantasía, historia, política, filosofía y exploración psicológica.",
+      "description": "Presenta tramas más orientadas a la acción y aventura, aborda temas más profundos y complejos. Estos pueden incluir drama, romance, ciencia ficción, fantasía, historia, política, filosofía y exploración psicológica.",
       "code": "seinen",
       "id": "36fa6056-d5cb-4562-9786-9e5ce6ad8a24"
     },

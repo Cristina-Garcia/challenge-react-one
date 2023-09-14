@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import { textLight } from '../../assets/UI/variables'
 
 export const Select = styled.select`
   background: #2a2f4f;
   width: 100%;
   padding: 10px;
   border: none;
-  color: #fff;
+  color: ${textLight};
   font-size: 21px;
   outline: 0px;
 `

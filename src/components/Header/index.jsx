@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { Logo } from '../../assets/UI'
 import { StyledButton } from '../../assets/UI'
-import { background, lineaColor } from '../../assets/UI/variables'
+import { lineaColor } from '../../assets/UI/variables'
+import './index.css'
 
 const StyledHeader = styled.header`
   display: flex;
@@ -11,7 +12,6 @@ const StyledHeader = styled.header`
   border-bottom: 1px solid ${lineaColor};
   padding: 1rem;
   box-sizing: border-box;
-  /* background: ${background}; */
 `
 const Header = () => {
   return (

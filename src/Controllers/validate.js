@@ -11,7 +11,7 @@ export const validationsAnimes = (form) => {
     errors.title = 'No puede tener más de 40 caracteres'
   }
   if (!form.videoId.trim()) {
-    errors.videoId = 'El campo Id del video  es requerido'
+    errors.videoId = 'El campo Id embed del video  es requerido'
   } else if (form.videoId.length < 11 || form.videoId.length > 11) {
     errors.videoId = 'Debe ingresar 11 caracteres'
   }

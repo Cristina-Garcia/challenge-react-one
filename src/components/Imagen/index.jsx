@@ -2,14 +2,18 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Image = styled.img`
-  width: 150px;
+  width: 170px;
   height: auto;
-  max-width: 100%;
   border: 2px solid ${(props) => props.color};
+
+  @media (max-width: 768px) {
+    width: 220px;
+  }
+  @media (max-width: 480px) {
+    width: 300px;
+  }
 `
 function Imagen({ anime, getId, borderColor }) {
-  // console.log('animeID', anime)
-
   return (
     <Image
       src={anime.imageurl}

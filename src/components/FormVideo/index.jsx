@@ -6,6 +6,7 @@ import InputText from '../InputText'
 import TextArea from '../TextArea'
 import { Form } from '../../assets/StyledFormGroup.js'
 import { StyledButton } from '../../assets/UI'
+import { textLight, text } from '../../assets/UI/variables'
 import { clientService } from '../../Controllers/service.js'
 import { DataContext } from '../../Controllers/Context'
 import { useForm } from '../../Controllers/useForm'
@@ -14,7 +15,7 @@ import { validationsAnimes } from '../../Controllers/validate.js'
 export const Title = styled.h1`
   font-size: 60px;
   font-weight: 400;
-  color: #fff;
+  color: ${textLight};
   text-align: center;
 `
 export const ButtonContainer = styled.div`
@@ -26,8 +27,11 @@ export const ButtonsActions = styled.div`
   gap: 0.5rem;
 `
 export const ButtonForm = styled(StyledButton)`
-  color: ${(props) => (props.$primary ? 'white' : 'black')};
-  background: ${({ $primary }) => ($primary ? '#5C469C' : 'white')};
+  color: ${(props) => (props.$primary ? textLight : 'black')};
+  background: ${({ $primary }) => ($primary ? text : textLight)};
+  &:hover {
+    color: ${textLight};
+  }
 `
 
 const animeData = {

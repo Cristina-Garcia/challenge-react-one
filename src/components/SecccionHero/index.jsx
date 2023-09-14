@@ -8,6 +8,7 @@ import {
   TitleHero,
   TextHero,
 } from '../../assets/UI'
+import { textLight } from '../../assets/UI/variables'
 import YouTubePlayer from 'youtube-player'
 import './index.css'
 
@@ -23,12 +24,14 @@ const ContainerHero = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding-inline: 2rem;
-  color: white;
+
+  color: ${textLight};
   z-index: 1;
   @media (max-width: 768px) {
     height: 450px;
@@ -66,7 +69,9 @@ function SectionPrincipal({ animeId }) {
     (categorie) => categorie.nombre === selectAnime?.genre
   )
   //Si hay una categoria seleccionada usamos el color que trae para resaltar el boton al que pertenece.
-  const colorPrincipal = categoriePrincipal ? categoriePrincipal.color : 'fff'
+  const colorPrincipal = categoriePrincipal
+    ? categoriePrincipal.color
+    : textLight
 
   const allow =
     'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share '

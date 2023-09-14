@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import Category from '../Category'
+import { textLight, secondary } from '../../assets/UI/variables'
 
 const Section = styled.section`
   display: flex;
   flex-direction: column;
-  border: 1px solid #d4adfc;
+  border: 1px solid ${secondary};
   margin-inline: 40px;
   margin-block: 2rem;
 `
@@ -16,12 +17,12 @@ const SectionHeader = styled.ul`
   width: 100%;
   flex: 1;
   flex-direction: row;
-  border: 1px solid #d4adfc;
+  border: 1px solid ${secondary};
   padding: 0.5rem;
 `
 const LiHeader = styled.li`
   list-style: none;
-  color: #fff;
+  color: ${textLight};
 `
 const CategoriesContainer = styled.div`
   display: flex;

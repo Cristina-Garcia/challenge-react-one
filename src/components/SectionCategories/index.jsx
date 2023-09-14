@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Slider from 'react-slick'
 import styled from 'styled-components'
 import Imagen from '../Imagen'
 import { ButtonMain } from '../../assets/UI'
-import Slider from 'react-slick'
+import { textLight } from '../../assets/UI/variables'
 
 const StyledSection = styled.section`
   width: 100%;
@@ -14,7 +15,7 @@ const StyledSection = styled.section`
 const SpanDescription = styled.span`
   font-size: 18px;
   font-weight: 300;
-  color: #fff;
+  color: ${textLight};
 `
 const CategoryHeader = styled.div`
   display: flex;
@@ -52,20 +53,21 @@ function SectionCategory({ categorie, animes, getId }) {
       },
     ],
   }
-
+  const filterAnimes = animes.filter(
+    (anime) => categorie.nombre === anime.genre
+  )
+  const shouldRender = filterAnimes.length >= 5
   return (
-    <StyledSection>
-      <CategoryHeader>
-        <Link to={`/animes/${categorie.nombre}`}>
-          <ButtonMain>{categorie.nombre}</ButtonMain>
-        </Link>
-        <SpanDescription>
-          Animes increíbles del género {categorie.nombre}
-        </SpanDescription>
-      </CategoryHeader>
-      <Slider {...settings}>
-        {animes.map((anime) => {
-          if (categorie.nombre === anime.genre) {
+    shouldRender && (
+      <StyledSection>
+        <CategoryHeader>
+          <Link to={`/animes/${categorie.nombre}`}>
+            <ButtonMain>{categorie.nombre}</ButtonMain>
+          </Link>
+          <SpanDescription>{categorie.description}</SpanDescription>
+        </CategoryHeader>
+        <Slider {...settings}>
+          {filterAnimes.map((anime) => {
             return (
               <Imagen
                 anime={anime}
@@ -74,10 +76,10 @@ function SectionCategory({ categorie, animes, getId }) {
                 borderColor={categorie.color}
               />
             )
-          }
-        })}
-      </Slider>
-    </StyledSection>
+          })}
+        </Slider>
+      </StyledSection>
+    )
   )
 }
 

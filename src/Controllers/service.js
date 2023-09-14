@@ -1,7 +1,8 @@
 import uuid4 from 'uuid4'
 
-const BASE_API = 'http://localhost:3000'
-// const apiURL = 'https://api.jikan.moe/v4/anime'
+const BASE_API = 'https://boveda.jorgr.dev'
+// const BASE_API = 'https://panicky-pear-attire.cyclic.app/'
+// const BASE_API = 'http://localhost:3000'
 
 const categoriesURL = `${BASE_API}/categories`
 const videosURL = `${BASE_API}/animes`
@@ -17,7 +18,6 @@ const listCategories = async () => {
   const restData = await res.json()
   return restData
 }
-
 const createVideo = async (videoData) => {
   return await fetch(videosURL, {
     method: 'POST',

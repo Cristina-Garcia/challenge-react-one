@@ -5,7 +5,6 @@ import { DataContext } from '../../Controllers/Context'
 
 function Main() {
   const { animeList, categoriesList } = useContext(DataContext)
-
   const [animeId, setAnimeId] = useState()
 
   const getId = (id) => {
