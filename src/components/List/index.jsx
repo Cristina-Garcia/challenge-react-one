@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
+import { Loader } from '../Loader'
 import { DataContext } from '../../Controllers/Context'
 import { TitleHero } from '../../assets/UI'
 import { textLight } from '../../assets/UI/variables'
@@ -48,29 +49,33 @@ const Title = styled.h2`
   color: ${textLight};
 `
 function List() {
-  const { animeList } = useContext(DataContext)
+  const { animeList, loading } = useContext(DataContext)
   const { categoria } = useParams()
 
-  return (
-    <>
-      <Header>Lista de Animes {categoria}</Header>
-      <Container>
-        {animeList.map((anime) => {
-          if (anime.genre === categoria) {
-            return (
-              <Card key={anime.id}>
-                <CardImg src={anime.imageurl} alt={anime.title} />
-                <CardInfo>
-                  <Title>{anime.title}</Title>
-                  <span>{anime.sinopsis}</span>
-                </CardInfo>
-              </Card>
-            )
-          }
-        })}
-      </Container>
-    </>
-  )
+  if (loading === true) {
+    return <Loader />
+  } else {
+    return (
+      <>
+        <Header>Lista de Animes {categoria}</Header>
+        <Container>
+          {animeList.map((anime) => {
+            if (anime.genre === categoria) {
+              return (
+                <Card key={anime.id}>
+                  <CardImg src={anime.imageurl} alt={anime.title} />
+                  <CardInfo>
+                    <Title>{anime.title}</Title>
+                    <span>{anime.sinopsis}</span>
+                  </CardInfo>
+                </Card>
+              )
+            }
+          })}
+        </Container>
+      </>
+    )
+  }
 }
 
 export default List

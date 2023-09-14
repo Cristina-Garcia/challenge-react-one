@@ -28,7 +28,7 @@ const ContainerHero = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   padding-inline: 2rem;
 
   color: ${textLight};

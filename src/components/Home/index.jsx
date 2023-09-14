@@ -12,6 +12,7 @@ const MainHome = styled.main`
   justify-content: center;
   align-items: center;
   margin-block-end: 1rem;
+  min-height: calc(100vh - 200px);
 `
 
 export default function Home() {
