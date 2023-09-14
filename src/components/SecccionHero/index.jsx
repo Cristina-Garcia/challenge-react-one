@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react'
+import React, { useEffect, useState, useContext, useRef } from 'react'
 import styled, { StyleSheetManager } from 'styled-components'
 import { DataContext } from '../../Controllers/Context'
 import {
@@ -59,6 +59,7 @@ function SectionPrincipal({ animeId }) {
   const { animeList, categoriesList } = useContext(DataContext)
   const [isVisible, setIsVisible] = useState(true)
   const [selectAnimeId, setSelectedAnimeId] = useState(null)
+  const iframeRef = useRef(null)
 
   //Encuentra el anime seleccionado
   const selectAnime = animeList.find((anime) => anime.id === animeId)
@@ -78,6 +79,7 @@ function SectionPrincipal({ animeId }) {
 
   useEffect(() => {
     if (animeId !== selectAnimeId) {
+      goToIframe()
       setIsVisible(true)
       setSelectedAnimeId(animeId)
     }
@@ -99,9 +101,24 @@ function SectionPrincipal({ animeId }) {
     }
   }, [animeId, selectAnimeId, videoSelectedId])
 
+  const goToIframe = () => {
+    // Verificamos que el iframeRef tenga un valor válido
+    if (iframeRef.current) {
+      // Obtenemos la posición del iframe en la página
+      const iframePosition = iframeRef.current.getBoundingClientRect().top
+
+      // Desplazamos la página a la posición del iframe
+      window.scrollTo({
+        top: window.scrollY + iframePosition,
+        behavior: 'smooth', // Para un desplazamiento suave
+      })
+    }
+  }
+
   return (
     <SectionHero>
       <iframe
+        ref={iframeRef}
         id="video-hero"
         src={`https://www.youtube.com/embed/${videoSelectedId}?enablejsapi=1&wmode=opaque&autoplay=1&rel=0`}
         title="YouTube video player"
